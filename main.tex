@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt]{book}
+
+% -------------------------------------------------------------------- 
+% Packages
+% --------------------------------------------------------------------
+% Figure packages
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{multirow}
+% Text, input, formatting, and language-related packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{subcaption}
+\usepackage[margin=3cm]{geometry}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{csvsimple}
+
+% Math packages
+\usepackage{amsmath, amsthm, amssymb, amsfonts, bm, nccmath, mathdots, mathtools, bigints, ulem}
+
+\begin{document}
+
+\author{Plant Design Group, Aalto University}
+\title{Aspen Tutorial}
+\date{\today}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+\include{./TeX_files/chapter01}
+\include{./TeX_files/chapter02}
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}
