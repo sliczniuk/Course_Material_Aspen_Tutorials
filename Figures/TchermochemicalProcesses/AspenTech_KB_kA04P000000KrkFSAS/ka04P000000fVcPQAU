@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg1252\deff0\dntblnsbdb\viewkind1
+{\fonttbl{\f0\froman\fcharset0 Times New Roman;}{\f1\fswiss\fcharset0 Arial;}{\f2\fswiss\fcharset0 Arial;}{\f3\froman\fcharset0 Times New Roman;}{\f4\fswiss\fcharset0 Arial;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue139;\red0\green139\blue139;\red0\green100\blue0;\red128\green0\blue128;\red139\green0\blue0;\red128\green128\blue0;\red169\green169\blue169;\red211\green211\blue211;\red0\green0\blue0;}
+{\*\listtable}{\*\listoverridetable
+}{\stylesheet{\*\cs0 \additive Default Paragraph Font;}
+}
+\jexpand\pgwsxn12240\pghsxn15840
+{\*\bkmkstart page1}{\*\bkmkend page1}
+\margl840\margr860\margt883\margb1440\marglsxn840\margrsxn860\cols1\colno1\colw10540
+{
+{\pard\plain \li0\ql{\f4\b\ul\fs18 Problem Statement}\par}
+}
+{\pard\sl-333\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs18 What is the best way to model the CO2 Capture Process by K2CO3 using Aspen Plus?}\par}
+}
+{\pard\sl-325\slmult0\par
+
+{\pard\plain \li0\ql{\f4\b\ul\fs18 Solution}\par}
+}
+{\pard\sl-333\slmult0\par
+
+{\pard\plain \li0\sl310\slmult1 \ri60\nooverflow\ql{\f2\fs18 In 2006.5, new Amines property packages for MEA and MDEA with H2S and CO2 were developed and delivered as application examples. These models are being improved, updated, and extended to other amines and solvents. They are posted on the support web site as soon as they are reviewed and ready for public use.}\par}
+}
+{\pard\sl-270\slmult0\par
+
+{\pard\plain \li0\sl310\slmult1 \ri100\nooverflow\ql{\f2\fs18 These examples include the relevant components, electrolyte reaction and chemistry, property methods, and data. Both equilibrium and kinetics reactions are considered. Properties were compared to literature data and parameters were re-regressed where needed. These property packages are now our recommended standard for modeling these systems rather than our older data packages or electrolyte inserts.}\par}
+}
+{\pard\sl-270\slmult0\par
+
+{\pard\plain \li0\sl310\slmult1 \ri200\nooverflow\ql{\f2\fs18 The applicability of the property packages is demonstrated by modeling the CO2 capture process using our rate-based distillation model RateSep within RadFrac. These CO2 capture columns are generally rate-limited rather than at equilibrium; hence, RateSep rather than RadFrac was used for accurate modeling. A valid RateSep license is needed to run RateSep. Process results are compared to literature data. Details of these models are fully documented. Even if a RateSep license is not available, the user can still leverage the data in other equilibrium-based calculations.}\par}
+}
+{\pard\sl-270\slmult0\par
+
+{\pard\plain \li0\sl310\slmult1 \ri0\nooverflow\ql{\f2\fs18 This file describes an Aspen Plus rate-based model of the CO2 capture process by K2CO3 (Potassium Carbonate) from a gas mixture of N2, H2O, CO2, and H2S. The model consists of an absorber and a stripper. The operation data from a pilot plant at TU Berlin were used to specify feed conditions and unit operation block specifications in the model. Thermophysical property models and reaction kinetic models are based on the works of Aspen Technology (2007) and Pinsent (1956). Transport property models and model parameters have been validated against experimental data from open literature.}\par}
+}
+{\pard\sl-271\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs18 The model presented here includes the following key features:}\par}
+}
+{\shp {\*\shpinst \shptop296\shpleft1141\shpright1232\shpbottom387\shpfblwtxt1\shpbypara\shpbxcolumn\shpwr3{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv{\pict\pngblip\picw12\pich12\picwgoal240\pichgoal240\picscalex101\picscaley101
+89504e470d0a1a0a0000000d494844520000000c0000000c0802000000d917cbb00000007749444154189585d1c10dc4200c04402b29c034031db8084c954b41
+54007fff7c8f5c129d7281fd7a64596bf23300448499995944005c23727733cb39d323aa6a665fa4aa4f71397727006fe20880bdf7de5a9ba0310631f37c5308
+619b8b235b4a692e628cebc36bad8b0a4a2977997fdd4f99cbb77c00329a6e2a838005b50000000049454e44ae426082
+}}}}}\pard\sl-20\slmult0\par
+
+{\pard\sl-309\slmult0\par
+
+{\pard\plain \li1320\ql{\f2\fs18 True species including ions}\par}
+}
+{\shp {\*\shpinst \shptop28\shpleft1141\shpright1232\shpbottom119\shpfblwtxt1\shpbypara\shpbxcolumn\shpwr3{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv{\pict\pngblip\picw12\pich12\picwgoal240\pichgoal240\picscalex101\picscaley101
+89504e470d0a1a0a0000000d494844520000000c0000000c0802000000d917cbb00000007749444154189585d1c10dc4200c04402b29c034031db8084c954b41
+54007fff7c8f5c129d7281fd7a64596bf23300448499995944005c23727733cb39d323aa6a665fa4aa4f71397727006fe20880bdf7de5a9ba0310631f37c5308
+619b8b235b4a692e628cebc36bad8b0a4a2977997fdd4f99cbb77c00329a6e2a838005b50000000049454e44ae426082
+}}}}}\pard\sl-20\slmult0\par
+
+{\pard\sl-41\slmult0\par
+
+{\pard\plain \li1320\ql{\f2\fs18 Electrolyte NRTL method for liquid and RK equation of state for vapor}\par}
+}
+{\shp {\*\shpinst \shptop28\shpleft1141\shpright1232\shpbottom119\shpfblwtxt1\shpbypara\shpbxcolumn\shpwr3{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv{\pict\pngblip\picw12\pich12\picwgoal240\pichgoal240\picscalex101\picscaley101
+89504e470d0a1a0a0000000d494844520000000c0000000c0802000000d917cbb00000007749444154189585d1c10dc4200c04402b29c034031db8084c954b41
+54007fff7c8f5c129d7281fd7a64596bf23300448499995944005c23727733cb39d323aa6a665fa4aa4f71397727006fe20880bdf7de5a9ba0310631f37c5308
+619b8b235b4a692e628cebc36bad8b0a4a2977997fdd4f99cbb77c00329a6e2a838005b50000000049454e44ae426082
+}}}}}\pard\sl-20\slmult0\par
+
+{\pard\sl-41\slmult0\par
+
+{\pard\plain \li1320\ql{\f2\fs18 Concentration-based reaction kinetics}\par}
+}
+{\shp {\*\shpinst \shptop28\shpleft1141\shpright1232\shpbottom119\shpfblwtxt1\shpbypara\shpbxcolumn\shpwr3{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv{\pict\pngblip\picw12\pich12\picwgoal240\pichgoal240\picscalex101\picscaley101
+89504e470d0a1a0a0000000d494844520000000c0000000c0802000000d917cbb00000007749444154189585d1c10dc4200c04402b29c034031db8084c954b41
+54007fff7c8f5c129d7281fd7a64596bf23300448499995944005c23727733cb39d323aa6a665fa4aa4f71397727006fe20880bdf7de5a9ba0310631f37c5308
+619b8b235b4a692e628cebc36bad8b0a4a2977997fdd4f99cbb77c00329a6e2a838005b50000000049454e44ae426082
+}}}}}\pard\sl-20\slmult0\par
+
+{\pard\sl-41\slmult0\par
+
+{\pard\plain \li1320\ql{\f2\fs18 Electrolyte transport property models}\par}
+}
+{\shp {\*\shpinst \shptop28\shpleft1141\shpright1232\shpbottom119\shpfblwtxt1\shpbypara\shpbxcolumn\shpwr3{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fBehindDocument}{\sv 1}}
+{\sp{\sn pib}{\sv{\pict\pngblip\picw12\pich12\picwgoal240\pichgoal240\picscalex101\picscaley101
+89504e470d0a1a0a0000000d494844520000000c0000000c0802000000d917cbb00000007749444154189585d1c10dc4200c04402b29c034031db8084c954b41
+54007fff7c8f5c129d7281fd7a64596bf23300448499995944005c23727733cb39d323aa6a665fa4aa4f71397727006fe20880bdf7de5a9ba0310631f37c5308
+619b8b235b4a692e628cebc36bad8b0a4a2977997fdd4f99cbb77c00329a6e2a838005b50000000049454e44ae426082
+}}}}}\pard\sl-20\slmult0\par
+
+{\pard\sl-41\slmult0\par
+
+{\pard\plain \li1320\ql{\f2\fs18 Rate-based models for absorber and stripper with packing}\par}
+}
+{\pard\sl-329\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs18 The most recent simulation file and documentation can be found in the examples directory for Aspen Plus. E.g,}\par}
+}
+{\pard\sl-273\slmult0\par
+
+{\pard\plain \li600\ql{\f3\fs24 C:\\Program Files\\AspenTech\\Aspen Plus Vxx.x\\GUI\\Examples\\Carbon Capture\\Amines ELECNRTL}\par}
+}
+{\pard\sl-317\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs18 Documentation and an Aspen Plus V10.0 backup (.bkp) file are attached.}\par}
+}}
