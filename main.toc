@@ -1,10 +1,11 @@
-\contentsline {chapter}{\numberline {1}CHEM-E1120 Thermochemical processes}{1}{}%
-\contentsline {section}{\numberline {1.1}Production of synthetic gas from a biomass}{1}{}%
-\contentsline {subsection}{\numberline {1.1.1}Thermodynamic model}{1}{}%
-\contentsline {subsection}{\numberline {1.1.2}Simulation}{3}{}%
-\contentsline {subsection}{\numberline {1.1.3}Results}{5}{}%
-\contentsline {section}{\numberline {1.2}The fast pyrolysis of the biomass}{6}{}%
-\contentsline {subsection}{\numberline {1.2.1}Thermodynamic model}{6}{}%
-\contentsline {subsection}{\numberline {1.2.2}Simulation}{7}{}%
-\contentsline {subsection}{\numberline {1.2.3}Results}{9}{}%
-\contentsline {chapter}{\numberline {2}The Second Chapter}{11}{}%
+\contentsline {chapter}{\numberline {1}Thermochemical processes}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Production of synthetic gas from a biomass}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Thermodynamic model}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Simulation}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Results}{5}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}The fast pyrolysis of the biomass}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Thermodynamic model}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Simulation}{7}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Results}{9}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Economic Analysis}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Acetic anhydride production}{11}{section.2.1}%

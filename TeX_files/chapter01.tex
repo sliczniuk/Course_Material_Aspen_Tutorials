@@ -1,4 +1,4 @@
-\chapter{CHEM-E1120 Thermochemical processes}
+\chapter{Thermochemical processes}
 
 \section{Production of synthetic gas from a biomass}
 
@@ -39,7 +39,7 @@ Add all simulation's components can be found in the table \ref{tbl:Gasification_
 	\label{tbl:Gasification_Components}
 \end{table}
 
-\subsection{Thermodynamic model} \label{CH::GasifierThermodynamics}
+\subsection{Thermodynamic model} \label{CH:GasifierThermodynamics}
 The next step is to select a thermodynamic model. The chosen property method is the Redlich-Kwong-Soave cubic equation of state with Boston-Mathias alpha function ($RKS-BM$). This method is suitable for non-polar or slightly polar mixtures like hydrocarbons and light gases. The data base of Aspen contains only conventional components, which means that the properties of the biomass and the coal needs to be specified manually. In the software the properties of the non-conventional components can be specified in "Method/NC Props" tab. The biomass and the ash properties can be estimated by HCOALGEN and DCOALIGT models. HCOALGEN and DCOALIGT models are used to calculate the enthalpy and density of non-conventional components, respectively. The HCOALGEN model requires these three component attributes for non-conventional components: proximate analysis results (denoted as PROXANAL in Aspen Plus), ultimate analysis results (denoted as ULTANAL in Aspen Plus), and sulfur analysis results (denoted as SULFANAL in Aspen Plus). The proximate analysis gives the weight content of moisture, fixed carbon, volatile matter and ash. The ultimate analysis gives the weight composition of coal in terms of ash, carbon, hydrogen, nitrogen, chlorine, sulfur, and oxygen. The sulfur analysis divides the sulfur content into three types, pyritic, sulfate, and organic sulfur. The DCOALIGT model requires only the two component attributes ULTANAL and SULFANAL. In Aspen Plus it is multiple correlations have been predefined to calculate the enthalpy. The HCOALGEN option codes are shown in table \ref{tbl:HCOALGEN}. 
 
 \begin{table}[h!]

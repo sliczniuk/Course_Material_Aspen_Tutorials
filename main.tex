@@ -13,17 +13,57 @@
 \usepackage{subcaption}
 \usepackage[margin=3cm]{geometry}
 \usepackage{verbatim}
-\usepackage{xcolor}
 \usepackage{wrapfig}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{pgfplots}
+
 \usepackage{csvsimple}
+
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[pdfpagemode=None,
+	colorlinks=true, 
+	urlcolor=blue, 
+	linkcolor=blue, 
+	citecolor=blue, 
+	pdfstartview=FitH]{hyperref}
+\usepackage{caption}
+
+\usepackage{fancyvrb}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+	%
+	frame=lines,  % top and bottom rule only
+	framesep=2em, % separation between frame and text
+	rulecolor=\color{Gray},
+	%
+	label=\fbox{\color{Black}Input.txt},
+	labelposition=topline,
+	%
+	commandchars=\|\(\), % escape character and argument delimiters for
+	% commands within the verbatim
+	commentchar=*        % comment character
+}
 
 % Math packages
 \usepackage{amsmath, amsthm, amssymb, amsfonts, bm, nccmath, mathdots, mathtools, bigints, ulem}
 
+% Biblography
+\usepackage[sort]{natbib}
+\setcitestyle{square,numbers}
+
 \begin{document}
 
-\author{Plant Design Group, Aalto University}
-\title{Aspen Tutorial}
+\author{Plant Design Group, Aalto University\\ Oliwer Sliczniuk}
+\title{Aspen Tutorials}
 \date{\today}
 
 \frontmatter
@@ -34,7 +74,10 @@
 \include{./TeX_files/chapter01}
 \include{./TeX_files/chapter02}
 
+\clearpage
 \backmatter
 % bibliography, glossary and index would go here.
+\bibliographystyle{unsrtnat}
+\bibliography{mybibfile}
 
 \end{document}
