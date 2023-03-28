@@ -20,7 +20,6 @@ Add all simulation's components can be found in the table \ref{tbl:Gasification_
 		\hline
 		Component ID&	Type			&	Coponent name	&	Alias\\
 		\hline 													
-		WATER		&	Conventional	&	WATER			&	H2O	\\
 		BIOMASS		&	Nonconventional	&					&		\\		
 		ASH			&	Nonconventional	&					&		\\
 		H2			&	Conventional	&	HYDROGEN		&	H2	\\
@@ -39,7 +38,7 @@ Add all simulation's components can be found in the table \ref{tbl:Gasification_
 	\label{tbl:Gasification_Components}
 \end{table}
 
-\subsection{Thermodynamic model} \label{CH:GasifierThermodynamics}
+%\subsection{Thermodynamic model} \label{CH:GasifierThermodynamics}
 The next step is to select a thermodynamic model. The chosen property method is the Redlich-Kwong-Soave cubic equation of state with Boston-Mathias alpha function ($RKS-BM$). This method is suitable for non-polar or slightly polar mixtures like hydrocarbons and light gases. The data base of Aspen contains only conventional components, which means that the properties of the biomass and the coal needs to be specified manually. In the software the properties of the non-conventional components can be specified in "Method/NC Props" tab. The biomass and the ash properties can be estimated by HCOALGEN and DCOALIGT models. HCOALGEN and DCOALIGT models are used to calculate the enthalpy and density of non-conventional components, respectively. The HCOALGEN model requires these three component attributes for non-conventional components: proximate analysis results (denoted as PROXANAL in Aspen Plus), ultimate analysis results (denoted as ULTANAL in Aspen Plus), and sulfur analysis results (denoted as SULFANAL in Aspen Plus). The proximate analysis gives the weight content of moisture, fixed carbon, volatile matter and ash. The ultimate analysis gives the weight composition of coal in terms of ash, carbon, hydrogen, nitrogen, chlorine, sulfur, and oxygen. The sulfur analysis divides the sulfur content into three types, pyritic, sulfate, and organic sulfur. The DCOALIGT model requires only the two component attributes ULTANAL and SULFANAL. In Aspen Plus it is multiple correlations have been predefined to calculate the enthalpy. The HCOALGEN option codes are shown in table \ref{tbl:HCOALGEN}. 
 
 \begin{table}[h!]
@@ -78,7 +77,7 @@ Default = 1 for each option code. In the exercise, the HCOALGEN codes for the as
 
 As there is multiple parameters which needs to evaluated, select option "Estimate all missing parameters" from "Estimation" tab. 
 
-\subsection{Simulation}
+%\subsection{Simulation}
 
 Each simulation start from defining an inlet streams. Specify the biomass feed to be $1000 [kg/h]$ at $25 ^\circ C]$ and $1 [bar]$. Enter its Component attribute given in table \ref{tbl:Gasification_Components}. Add proximate, ultimate and sulphur analysis data of biomass feed in NC Solid.
 
@@ -145,7 +144,7 @@ Finally, in the separation part of the simulation the solids are separated from 
 
 The configuration of the simulation and its results are presented below:
 
-\newpage \subsection{Results}
+\newpage %\subsection{Results}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/TchermochemicalProcesses/GasificationResults.jpg}
@@ -172,7 +171,7 @@ The process flow diagram is presented on figure \ref{fig:Pyrolasis}. The biomass
 	\label{fig:Pyrolasis}
 \end{figure}
 
-\subsection{Thermodynamic model}
+%\subsection{Thermodynamic model}
 Add all the conventional components in the component list as given in the table \ref{tbl:Pyrolysis_components} and non-conventional components BIOMASS, ASH, CHAR and LIGNIN. 
 
 The thermodynamic method used in this exercise is UNIQUAC (universal quasichemical), which is an activity coefficient model used in description of phase equilibria The model is a so-called lattice model and has been derived from a first order approximation of interacting molecule surfaces in statistical thermodynamics. The model is however not fully thermodynamically consistent due to its two liquid mixture approach. In this approach the local concentration around one central molecule is assumed to be independent from the local composition around another type of molecule. The UNIQUAC model also serves as the basis of the development of the group contribution method UNIFAC, where molecules are subdivided into functional groups. In fact, UNIQUAC is equal to UNIFAC for mixtures of molecules, which are not subdivided; e.g. the binary systems water-methanol, methanol-acryonitrile and formaldehyde-DMF. 
@@ -214,7 +213,7 @@ The properties of the non-conventional components need to define. To do so by in
 	\label{tbl:Pyrolysis_components}
 \end{table}
 
-\subsection{Simulation}
+%\subsection{Simulation}
 
 In the Simulation section, Main Flowsheet, select a yield reactor and connect IN and Out streams. In the Setup sheet, set Stream class to ‘MIXNC’. This will enable calculation of non-conventional components (go to Simulation-> set up-> specification-> Global setting stream class). 
 
@@ -344,7 +343,7 @@ The next step is to define Biomass feed at 25 °C, 1bar and 1kg/s. Use Component
 
 The outlet stream from the reactor flows to the separator. The solid particles The SSPLIT assumes perfect separation of solid particles from the main stream. Then the mixture of gaseous and liquid products enter the heat exchanger, which work at $30 [^\circ C]$ and $1 [bar]$. As the results the condensation occurs. The following step is to separate vapour from the liquid phase in the flash. The flash is assumed to be adiabatic and isobaric. The liquid stream is the main product and represents the bio-oil. 
 
-\newpage \subsection{Results}
+\newpage %\subsection{Results}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.91\linewidth]{Figures/TchermochemicalProcesses/PyrolysisResults.jpg}

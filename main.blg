@@ -1,52 +1,58 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 26 items.
-A level-1 auxiliary file: ./TeX_files/chapter01.aux
-Reallocating 'name_of_file' (item size: 1) to 26 items.
-A level-1 auxiliary file: ./TeX_files/chapter02.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: ./TeX_files/Preface.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: ./TeX_files/Thermochemical.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: ./TeX_files/Esterification.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: ./TeX_files/HeatExchanger.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: ./TeX_files/EconomicAnalysis.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: mybibfile.bib
-You've used 2 entries,
+You've used 3 entries,
             2481 wiz_defined-function locations,
-            569 strings with 4758 characters,
-and the built_in function-call counts, 576 in all, are:
-= -- 46
-> -- 14
-< -- 2
-+ -- 8
-- -- 4
-* -- 26
-:= -- 101
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 2
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 38
-empty$ -- 61
-format.name$ -- 6
-if$ -- 119
+            580 strings with 5039 characters,
+and the built_in function-call counts, 888 in all, are:
+= -- 72
+> -- 29
+< -- 3
++ -- 14
+- -- 8
+* -- 44
+:= -- 152
+add.period$ -- 12
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 57
+empty$ -- 91
+format.name$ -- 13
+if$ -- 187
 int.to.chr$ -- 1
-int.to.str$ -- 3
-missing$ -- 4
-newline$ -- 20
-num.names$ -- 6
-pop$ -- 22
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 26
+num.names$ -- 9
+pop$ -- 33
 preamble$ -- 1
-purify$ -- 2
+purify$ -- 3
 quote$ -- 0
-skip$ -- 21
+skip$ -- 32
 stack$ -- 0
-substring$ -- 4
-swap$ -- 4
+substring$ -- 6
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 12
 warning$ -- 0
-while$ -- 4
+while$ -- 6
 width$ -- 0
-write$ -- 35
+write$ -- 49

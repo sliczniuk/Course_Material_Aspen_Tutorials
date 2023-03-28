@@ -1,9 +1,15 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Segovia-Hernández and Gómez-Castro(2020)]{SegoviaHernandez2020}
+Juan~Gabriel Segovia-Hernández and Fernando~Israel Gómez-Castro.
+\newblock \emph{Stochastic Process Optimization using Aspen Plus®}.
+\newblock CRC Press, 2020.
+\newblock ISBN 9780367573096.
 
 \bibitem[Al-Malah(2016)]{AlMalah2016}
 Kamal I.~M. Al-Malah.
