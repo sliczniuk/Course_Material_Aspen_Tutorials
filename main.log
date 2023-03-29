@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.9.27)  28 MAR 2023 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.9.27)  29 MAR 2023 13:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1124,24 +1124,24 @@ LaTeX Info: Redefining \cite on input line 694.
 (TeX_files/Esterification.aux) (TeX_files/EconomicAnalysis.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 (C:\Users\sliczno1\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
@@ -1218,9 +1218,9 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 63.
+ on input line 65.
 
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 65.
 
 (C:\Users\sliczno1\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1235,20 +1235,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count356
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
 
 
 (C:\Users\sliczno1\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 
 
 (C:\Users\sliczno1\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1281,8 +1281,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 (TeX_files/Thermochemical.tex
 Chapter 1.
-<Figures/TchermochemicalProcesses/Gasification.jpeg, id=95, 1757.06438pt x 438.
-8897pt>
+<Figures/TchermochemicalProcesses/Gasification.jpeg, id=109, 1757.06438pt x 438
+.8897pt>
 File: Figures/TchermochemicalProcesses/Gasification.jpeg Graphic file (type jpg
 )
 <use Figures/TchermochemicalProcesses/Gasification.jpeg>
@@ -1296,7 +1296,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./Figures/TchermochemicalProcesses/Gasification.jpeg>] [2]
-<Figures/TchermochemicalProcesses/Gasifier.png, id=118, 472.76625pt x 406.51875
+<Figures/TchermochemicalProcesses/Gasifier.png, id=134, 472.76625pt x 406.51875
 pt>
 File: Figures/TchermochemicalProcesses/Gasifier.png Graphic file (type png)
 <use Figures/TchermochemicalProcesses/Gasifier.png>
@@ -1304,7 +1304,7 @@ Package pdftex.def Info: Figures/TchermochemicalProcesses/Gasifier.png  used on
  input line 133.
 (pdftex.def)             Requested size: 170.71393pt x 146.79324pt.
  [3] [4 <./Figures/TchermochemicalProcesses/Gasifier.png>]
-<Figures/TchermochemicalProcesses/GasificationResults.jpg, id=135, 911.65594pt 
+<Figures/TchermochemicalProcesses/GasificationResults.jpg, id=150, 911.65594pt 
 x 894.34125pt>
 File: Figures/TchermochemicalProcesses/GasificationResults.jpg Graphic file (ty
 pe jpg)
@@ -1315,27 +1315,30 @@ pg  used on input line 150.
  [5 <./Figures/TchermochemicalProcesses/GasificationResults.jpg>]
 
 LaTeX Warning: Reference `CH::GasifierThermodynamics' on page 6 undefined on in
-put line 161.
+put line 160.
 
-<Figures/TchermochemicalProcesses/Pyrolysis.jpeg, id=142, 1720.17656pt x 514.17
+<Figures/TchermochemicalProcesses/Pyrolysis.jpeg, id=157, 1720.17656pt x 514.17
 094pt>
 File: Figures/TchermochemicalProcesses/Pyrolysis.jpeg Graphic file (type jpg)
 <use Figures/TchermochemicalProcesses/Pyrolysis.jpeg>
 Package pdftex.def Info: Figures/TchermochemicalProcesses/Pyrolysis.jpeg  used 
-on input line 169.
+on input line 168.
 (pdftex.def)             Requested size: 426.79135pt x 127.56956pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [6 <./Figures/TchermochemicalProcesses/Pyrolysis.jpeg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7]
-<Figures/TchermochemicalProcesses/PyrolysisResults.jpg, id=163, 735.49782pt x 1
+<Figures/TchermochemicalProcesses/PyrolysisResults.jpg, id=178, 735.49782pt x 1
 162.3425pt>
 File: Figures/TchermochemicalProcesses/PyrolysisResults.jpg Graphic file (type 
 jpg)
 <use Figures/TchermochemicalProcesses/PyrolysisResults.jpg>
 Package pdftex.def Info: Figures/TchermochemicalProcesses/PyrolysisResults.jpg 
- used on input line 349.
+ used on input line 348.
 (pdftex.def)             Requested size: 388.38168pt x 613.78615pt.
 
 
@@ -1353,23 +1356,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 Chapter 2.
 [11] [12]
-<Figures/Proces_Analysis/HX.png, id=196, 444.15938pt x 384.6872pt>
+<Figures/Proces_Analysis/HX.png, id=211, 444.15938pt x 384.6872pt>
 File: Figures/Proces_Analysis/HX.png Graphic file (type png)
 <use Figures/Proces_Analysis/HX.png>
 Package pdftex.def Info: Figures/Proces_Analysis/HX.png  used on input line 61.
 
-(pdftex.def)             Requested size: 298.75264pt x 258.4895pt.
-<Figures/Proces_Analysis/HX2.jpg, id=198, 961.34157pt x 339.51843pt>
+(pdftex.def)             Requested size: 298.75264pt x 248.85892pt.
+<Figures/Proces_Analysis/HX2.jpg, id=213, 961.34157pt x 339.51843pt>
 File: Figures/Proces_Analysis/HX2.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/HX2.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/HX2.jpg  used on input line 67
 .
-(pdftex.def)             Requested size: 298.75264pt x 105.51382pt.
+(pdftex.def)             Requested size: 384.1096pt x 135.6599pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <./Figures/Proces_Analysis/HX.png> <./Figures/Proces_Analysis/HX2.jpg>]
-<Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg, id=208, 1753.3003
+<Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg, id=223, 1753.3003
 1pt x 749.80125pt>
 File: Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg Graphic file 
 (type jpg)
@@ -1377,7 +1380,7 @@ File: Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg Graphic file
 Package pdftex.def Info: Figures/Proces_Analysis/Parametric_sensitivity_analysi
 s.jpg  used on input line 89.
 (pdftex.def)             Requested size: 422.52577pt x 180.6882pt.
-<Figures/Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg, id=209, 1
+<Figures/Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg, id=224, 1
 746.525pt x 761.09344pt>
 File: Figures/Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg Graph
 ic file (type jpg)
@@ -1387,26 +1390,26 @@ s_inverse.jpg  used on input line 94.
 (pdftex.def)             Requested size: 422.52577pt x 184.11783pt.
  [14 <./Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg> <./Figures
 /Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg>]
-<Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg, id=217
+<Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg, id=232
 , 1746.525pt x 752.0597pt>
 File: Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg Gr
 aphic file (type jpg)
 <use Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/Parametric_sensitivity_analysi
-s_conversion.jpg  used on input line 114.
+s_conversion.jpg  used on input line 115.
 (pdftex.def)             Requested size: 426.79135pt x 183.78pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/Proces_Analysis/Distillation.jpg, id=220, 868.74562pt x 751.30687pt>
+<Figures/Proces_Analysis/Distillation.jpg, id=235, 868.74562pt x 751.30687pt>
 File: Figures/Proces_Analysis/Distillation.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/Distillation.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/Distillation.jpg  used on inpu
-t line 144.
+t line 145.
 (pdftex.def)             Requested size: 213.39568pt x 184.54755pt.
 
-Underfull \vbox (badness 3323) has occurred while \output is active []
+Underfull \vbox (badness 2951) has occurred while \output is active []
 
  [15 <./Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg>
 ]
@@ -1414,19 +1417,19 @@ Underfull \vbox (badness 3323) has occurred while \output is active []
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./Figures/Proces_Analysis/Distillation.jpg>]
-<Figures/Proces_Analysis/Column_Design_Auto.jpg, id=237, 1762.33406pt x 773.891
+<Figures/Proces_Analysis/Column_Design_Auto.jpg, id=252, 1762.33406pt x 773.891
 25pt>
 File: Figures/Proces_Analysis/Column_Design_Auto.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/Column_Design_Auto.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/Column_Design_Auto.jpg  used o
-n input line 191.
+n input line 192.
 (pdftex.def)             Requested size: 426.79135pt x 187.41452pt.
-<Figures/Proces_Analysis/Column_Design_Manual.jpg, id=239, 1759.32281pt x 719.6
+<Figures/Proces_Analysis/Column_Design_Manual.jpg, id=254, 1759.32281pt x 719.6
 8875pt>
 File: Figures/Proces_Analysis/Column_Design_Manual.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/Column_Design_Manual.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/Column_Design_Manual.jpg  used
- on input line 200.
+ on input line 201.
 (pdftex.def)             Requested size: 426.79135pt x 174.5847pt.
  [17 <./Figures/Proces_Analysis/Column_Design_Auto.jpg>]) [18 <./Figures/Proces
 _Analysis/Column_Design_Manual.jpg>]
@@ -1434,7 +1437,7 @@ _Analysis/Column_Design_Manual.jpg>]
 
  (TeX_files/EconomicAnalysis.tex
 Chapter 3.
-<Figures/Econmic_Analysis/Flowsheet.jpg, id=253, 1612.52437pt x 611.28375pt>
+<Figures/Econmic_Analysis/Flowsheet.jpg, id=268, 1612.52437pt x 611.28375pt>
 File: Figures/Econmic_Analysis/Flowsheet.jpg Graphic file (type jpg)
 <use Figures/Econmic_Analysis/Flowsheet.jpg>
 Package pdftex.def Info: Figures/Econmic_Analysis/Flowsheet.jpg  used on input 
@@ -1445,43 +1448,43 @@ line 9.
 
 
 
- <./Figures/Econmic_Analysis/Flowsheet.jpg>] [20]
-Overfull \hbox (2.14865pt too wide) in paragraph at lines 103--105
+ <./Figures/Econmic_Analysis/Flowsheet.jpg>] [20] [21]
+Overfull \hbox (2.14865pt too wide) in paragraph at lines 105--107
 []\T1/cmr/m/n/12 DST1(RADFRAC) and DST2(RADFRAC); The dis-til-la-tion columns c
 on-
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-[22] [23]
-Overfull \hbox (9.70285pt too wide) in paragraph at lines 290--291
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+[24]
+Overfull \hbox (9.70285pt too wide) in paragraph at lines 292--293
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25]
-Overfull \hbox (9.70285pt too wide) in paragraph at lines 342--343
+[25]
+Overfull \hbox (9.70285pt too wide) in paragraph at lines 344--345
  [][] 
  []
 
-[26]
-Overfull \hbox (10.72328pt too wide) in paragraph at lines 356--357
-[]\T1/cmr/m/n/12 where $\OML/cmm/m/it/12 EPELP$ \T1/cmr/m/n/12 is the "End Pe-r
-iod for Eco-nomic Life of Project" (i.e., $\OML/cmm/m/it/12 EPELP \OT1/cmr/m/n/
-12 =
- []
 
-[27]) [28
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26] [27]) [28
 
 
 
@@ -1501,16 +1504,16 @@ SBN
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AA68D6858491921B2E2C24F7C6A09492;1818.
+(rerunfilecheck)             Checksum: 71A3BB13320406F66444A5A0132A0CF3;2266.
  ) 
 Here is how much of TeX's memory you used:
- 36661 strings out of 478847
- 832006 string characters out of 2848486
- 1243210 words of memory out of 3000000
- 53748 multiletter control sequences out of 15000+600000
- 434508 words of font info for 109 fonts, out of 8000000 for 9000
+ 36662 strings out of 478847
+ 832028 string characters out of 2848486
+ 1248348 words of memory out of 3000000
+ 53749 multiletter control sequences out of 15000+600000
+ 433687 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,131p,1674b,2450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,19n,131p,1638b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program
  Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/sliczno1/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/s
@@ -1532,11 +1535,10 @@ blic/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super
 Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX/
 fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/cm-super/sfrm2074.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-supe
-r/sfsl1200.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfti1200.pf
-b>
-Output written on main.pdf (35 pages, 3628727 bytes).
+r/sfti1200.pfb>
+Output written on main.pdf (35 pages, 3612135 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 472 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

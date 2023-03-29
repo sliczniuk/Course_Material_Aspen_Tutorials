@@ -2,7 +2,7 @@
 
 \section{Acetic anhydride production}
 
-	To demonstrate how to evaluate the economic attributes of a chemical process, we use the production of acetic anhydride from acetone. We are going to follow the book of \cite{AlMalah2016}. The process flowsheet for acetic anhydride production is made of PFR with a recycle for the unreacted acetone, followed by two downstream separation units: rectifying and distillation column and finally the conversion of ketene and acetic acid into acetic anhydride using CSTR. The flowsheet is presented on figure \ref{fig:Acetic_Flowsheet}
+	We use the production of acetic anhydride from acetone to demonstrate how to evaluate the economic attributes of a chemical process. We are going to follow the book of \cite{AlMalah2016}. The process flowsheet for acetic anhydride production is made of PFR with a recycle for the unreacted acetone, followed by two downstream separation units: rectifying and distillation column and finally, the conversion of ketene and acetic acid into acetic anhydride using CSTR. The flowsheet is presented on figure \ref{fig:Acetic_Flowsheet}
 	
 	\begin{figure}[h!]
 		\centering
@@ -13,15 +13,15 @@
 
 	The methods recommended by Aspen for Carboxylic Acids are activity coefficient methods with Nothangel or Hayden-O'Connel model with vapour phase association with NRTL-HOC or WILSON-NTH. In this simulation, Wilson-NTH is chosen. 
 	
-	All the missing binary interaction coefficients can be estimated by the UNIFAC method, which uses information about the structure of particular components to predict its behaviour. 
+	All the missing binary interaction coefficients can be estimated by the UNIFAC method, which uses information about the structure of particular components to predict their behaviour. 
 	
 	The reactor design in Aspen Plus depends on the reactor type the user chooses. In this exercise, the PFR and CSTR reactors are used. The first reactor is PFR. Firstly, one needs to decide on the reactor type. The adiabatic reactor is used in this case. Then the reactor dimensions should be provided. The third step is to define the kinetics of the reaction need to be defined. The powerlow model is used. Kinetic data can be found in \cite{Fogler1974}. 
 	
-	Due to the fact that the outlet stream from the reactor contains a high amount of unreacted acetone, which should be separated and recirculated. This can be done with an absorption column or distillation column. 
+	The outlet stream from the reactor contains a high amount of unreacted acetone, which should be separated and recirculated. This can be done with an absorption column or distillation column. 
 	
 	Although, the vapour feed to the column should be compressed before the separation. The 4-stage compressor can be used for that purpose. 
-	Then the stream is fed into the column. This is an example of a rare process, which belongs to the cryogenic group due to the very lower temperature in the condenser. The acetone is a bottom product and is recycled. In the second column, the methane is separated from ketene in a distillation column. 
-	The ketene is a bottom product of the distillation and is used as a feed for the CSTR reactor. The ketene is mixed with acetic acid in the reactor. First, the information about working conditions (T and P) and the reactor's technical details (Volume) must be introduced to Aspen Plus. Then the reaction is described. The powerlaw model is used again, but this time the reaction type is "equilibrium", meaning that the Gibbs energy minimization algorithm is used. 
+	Then the stream is fed into the column. This is an example of a rare process which belongs to the cryogenic group due to the significantly lower temperature in the condenser. The acetone is a bottom product and is recycled. The methane is separated from ketene in a distillation column in the second column. 
+	The ketene is a bottom product of the distillation and is used as a feed for the CSTR reactor. The ketene is mixed with acetic acid in the reactor. First, the information about working conditions (T and P) and the reactor's technical details (Volume) must be introduced to Aspen Plus. Then the reaction is described. The powerlaw model is used again, but the reaction type is "equilibrium", meaning that the Gibbs energy minimization algorithm is used. 
 	
 	The input file can be found at the end of this chapter. The results of the simulation are presented in table \ref{tab:Acet_Simu_Result_Basic}:
 	
@@ -50,7 +50,9 @@
 	\label{tab:Acet_Simu_Result_Basic}
 	\end{table}
 
-	If we have the process simulation ready and stable, we can move to the economic analysis of the process. The economic analysis requires defining feed and product stream prices, and defining utilities in terms of pricing and associating them with pieces of equipment, such as a pump, compressor, condenser, reboiler, and heater. The economic analysis consists of several steps.
+	\section{Economic analysis steps}
+
+	If we have the process simulation ready and stable, we can move to the economic analysis of the process. The economic analysis requires defining feed and product stream prices, defining utilities in terms of pricing, and associating them with equipment such as a pump, compressor, condenser, reboiler, and heater. The economic analysis consists of several steps.
 	
 	\begin{enumerate}[label=\textbf{Step \arabic{enumi}}:,ref=Step \arabic{enumi}]
 		
@@ -67,7 +69,7 @@
 
 	\item Feed, product and utility prices
 	
-	In the "Setup" | "Stream Price" | "Input" form, the price per unit of the feed or product stream can be specified. In the "Utilities" folder, each utility used in the simulation is characterized. If pre-defined utility is used, then it has its own "purchase price" or "energy price". The price of a utility can be modified by entering detail information of the that utility. The price used in this exercise are shown in table \ref{tab:Stream_prices} and the utility prices have default values suggested by the software.
+	In the "Setup" | "Stream Price" | "Input" form, the price per unit of the feed or product stream can be specified. In the "Utilities" folder, each utility used in the simulation is characterized. Each pre-defined utility has its own "purchase price" or "energy price". The price of a utility can be modified by entering detailed information about that utility. The prices used in this exercise are shown in table \ref{tab:Stream_prices}, and the utility prices have default values suggested by the software.
 	
 	\begin{table}[!ht]
 		\centering
@@ -83,7 +85,7 @@
 	\label{tab:Stream_prices}
 	\end{table}
 	
-	\item Activation of the economic module
+	\item Activation of the economical module
 	
 	There are two routs to perform economic analysis with Aspen environment. First one is to use the economic module, which is incorporated in the Aspen Plus software. The second one is to use stand-alone module called "Aspen Economic Analyzer" (APEA). We are going to focus on the second method as it is more comprehensive and give more flexibility. 
 	
@@ -95,39 +97,39 @@
 	
 	\item Mapping and sizing \label{ste:Mapping}
 	
-	The "Map option" can be activated with the "Map simulator Items" button located at the top of the page. The "Size equipment" should be marked, while "Custom sizing" can be left unmarked. "Customize sizing" option allows to interfere with the details of equipment sizing. In the "Map Preview" window all the flowsheet objects are mapped with APEA built-in objects. We are going to used the following mapping:
+	The "Map option" can be activated with the "Map simulator Items" button at the top of the page. The "Size equipment" should be marked, while "Custom sizing" can be left unmarked. The "Customize sizing" option interferes with equipment sizing details and allows to use of custom sizing models. In the "Map Preview" window, all the flowsheet objects are mapped with APEA built-in objects. For example, we are going to use the following mapping:
 	
 	\begin{enumerate}
-		\item COOLER1 is "Floating head shell and tube exchanger" because of significant temperature difference between the hot and cold stream.
-		\item COOLER2 is "Air cooler" to reflect the fact that “AIR” utility is used.
-		\item DST1(RADFRAC) and DST2(RADFRAC); The distillation columns consist the sets of equipment, and each of the should be specify.
+		\item COOLER1 is "Floating headshell and tube exchanger" because of a significant temperature difference between the hot and cold stream.
+		\item COOLER2 is "Air cooler" to reflect that "AIR" utility is used.
+		\item DST1(RADFRAC) and DST2(RADFRAC); The distillation columns consist of the sets of equipment, and each should be specified.
 		\begin{itemize}
-			\item Tower type is "Multiple diameter, trayed or packed tower".
+			\item Tower type is "Multiple diameters, trayed or packed tower".
 			\item Condenser type is "Bare pipe immersion coil".
-			\item Condenser drum is "Horizontal drum".
+			\item Condenser drum is a "Horizontal drum".
 			\item Reflux pump type is "Centrifugal single or multi-stage pump".
 		\end{itemize}
 		\item Heater type is "Box type process furnace".
 		\item Mixer can be represented as "Agitated tank – enclosed".
-		\item The compressor type is “Centrifugal compressor - horizontal".
+		\item The compressor type is "Centrifugal compressor - horizontal".
 		\item PFR is "Packed tower".
 		\item CSTR is "Agitated tank – enclosed, jacketed".
 	\end{enumerate}
-
-	The mapping and sizing are performed automatically. It 
+	
+	The mapping and sizing are performed automatically.
 	
 	\item Debugging 
 	
-	The next step would be to performed the project evaluation by click on the "Evaluate Project" button. If things go smooth then you will reach the final executive summary for costs without hassles and you can go to the \ref{ste:ProjectEvaluation}. However, you may get warning or error messages during the evaluation step regarding sizing or missing input data of some pieces of equipment. f you look at the generated report, you will find that APEA reports an error, which is due	to improper entry, such as the type of material of construction or a property value that is out of range. On the other hand, the warning message alarms the user that there might be an error incurred in the user’s selected mapped object specifications.
+	The next step would be to evaluate the project by clicking the "Evaluate Project" button. If things go smoothly, you will reach the final executive summary for costs without hassles, and you can go to the \ref{ste:ProjectEvaluation}. However, you may get a warning or error message during the evaluation step regarding sizing or missing input data for some pieces of equipment. To check for issues, you can look at the generated report to find that APEA reports errors due to improper entry, such as the type of construction material or a property value that is out of range. On the other hand, the warning message alarms the user that an error might be incurred in the user's selected mapped object specifications.
 	
 	\begin{itemize}
 		\item HEATER
 		
 		\textit{ERROR> 'FU -    5' STRESS FOR MATERIAL A 214   IS ZERO AT A TEMPERATURE OF  791.85 SYSTEM MAY NOT CONTAIN STRESS VALUES FOR THE MATERIAL.}
 		
-		This means that material of construction A214 (Carbon Steel) is not suitable for a high-temperature heater. The default Carbon steel A214 can be replaced with S347.
+		This means that construction A214 (Carbon Steel) material is unsuitable for a high-temperature heater. However, the default Carbon steel A214 can be replaced with S347.
 		
-		Each piece of equipment can be modified in the "Project View" section. Right click on an item and select modify to access the details of each equipment. After change the inner "Evaluate" button can be used evaluate only the selected item. \\
+		Each piece of equipment can be modified in the "Project View" section. Right-click on an item and select modify to access the details of each piece of equipment. After changes, the inner "Evaluate" use a button to evaluate only a selected item. \\
 		
 		\item PFR
 		
@@ -145,13 +147,13 @@
 			*Component Ref \#: 17
 			WARN > 'HE -   17' DESIGN TEMPERATURE TOO HIGH FOR VACUUM OR EXTERNAL PRESSURE DESIGN}
 		
-		COOLER1 material can be specified as “347S” and “SS347” for construction for both tube and shell.
+		COOLER1 material can be specified as "347S" and "SS347" for both tube and shell construction.
 		
 	\end{itemize}
 	
 	\item Project evaluation \label{ste:ProjectEvaluation}
 	
-	Clicking on "Capital Costs" o generate a full-fledge report s that include all cost-based technical project details, including design, equipment, civil, structural, piping, mechanical, steel, instrumental, electrical, insulation, paint, labor, management, and the project metrics, such as Independent Project Analysis (IPA) metrics and Project Evaluation System (PES) summary and cost check. 
+	Clicking on "Capital Costs" o generate a full-fledge report s that includes all cost-based technical project details, including design, equipment, civil, structural, piping, mechanical, steel, instrumental, electrical, insulation, paint, labor, management, and the project metrics, such as Independent Project Analysis (IPA) metrics and Project Evaluation System (PES) summary and cost check. 
 	
 	The investment analysis of the project is summarized in table \ref{tab:AceticInvestment}.
 	
@@ -200,7 +202,7 @@
 	\label{tab:AceticInvestment}
 	\end{table}
 		
-	The summery of the overall cost obtained from the economic analysis can be found in table \ref{tab:AceticProdInvestment}.
+	The summary of the overall cost obtained from the economic analysis can be found in table \ref{tab:AceticProdInvestment}.
 	
 	\begin{table}[H]
 		\centering
@@ -219,7 +221,6 @@
 	\label{tab:AceticProdInvestment}
 	\end{table}
 
-	\hrule
 	Remember that total operating cost includes:
 	
 	\begin{multicols}{2}
@@ -234,9 +235,10 @@
 			\item General and admin cost
 		\end{itemize} 
 	\end{multicols}
-	\hrule 
 	
-	\item Investment analysis 
+	\end{enumerate}
+	
+	\section{Investment indicators}
 	
 	An economy of an arbitrary process can be analysed based on different indicators. The most popular indicator is the \textbf{Net Present Value (NPV)}, which applies to a series of cash flows occurring at different times and accounts for the "time value of money". NPV is determined by calculating the costs (negative cash flows) and benefits (positive cash flows) for each period of an investment. After the cash flow for each period is calculated, the present value (PV) of each one is achieved by discounting its future value (see equation \ref{EQ:PV}) at a periodic rate of return (the rate of return dictated by the market). NPV is the sum of all the discounted future cash flows, as given by equation \ref{EQ:NPV}.
 	
@@ -250,9 +252,9 @@
 		\label{EQ:NPV}
 	\end{equation}
 
-	where $t$ is the time of the cash flow, $r$ is the discount rate, i.e. the return that could be earned per unit of time on an investment with similar risk and $R_{t}$ is the net cash flow i.e. cash inflow – cash outflow, at time $t$ and $N$ is the number of time intervals.
+	where $t$ is the time of the cash flow, $r$ is the discount rate, i.e. the return that could be earned per unit of time on investment with similar risk, and $R_{t}$ is the net cash flow, i.e. cash inflow – cash outflow, at time $t$ and $N$ is the number of time intervals.
 	
-	Based on the project evaluation performed in \ref{ste:ProjectEvaluation}, the PV and NPV are found. The PV and NPV curves are presented on figure \ref{fig:CashFlow}.
+	Based on the project evaluation performed in \ref{ste:ProjectEvaluation}, the PV and NPV are found. The PV and NPV curves are presented in figure \ref{fig:CashFlow}.
 	
 	\begin{figure}[h!]
 		\centering
@@ -292,7 +294,7 @@
 	\label{fig:CashFlow}
 	\end{figure}
 
-	NPV is negative for the first 6 years and becomes positive after that, which means that the project appears to be profitable, from year seven onward.
+	NPV is negative for the first six years and becomes positive afterwards, meaning the project appears profitable from year seven onward.
 	
 	The second indicator is the \textbf{discounted payout period (DPP)}, which is described by equation \ref{EQ:DPP}
 	
@@ -311,7 +313,7 @@
 		\label{EQ:PI}
 	\end{equation}
 	
-	If the profitability index is greater than one, then the project appears to be profitable. If this index is less than one, then the project appears not to be profitable. If this number equals one then the project incurs no losses or gains (break-even point). The time evolution of PI is shown on figure \ref{fig:PI}.
+	If the profitability index is greater than one, then the project appears to be profitable. If this index is less than one, the project appears unprofitable. If this number equals one, the project incurs no losses or gains (break-even point). PI's time evolution is shown in figure \ref{fig:PI}.
 	
 	\begin{figure}[h!]
 		\centering
@@ -344,10 +346,10 @@
 		\label{fig:PI}
 	\end{figure}
 
-	The fourth indicator is the \textbf{internal rate of return (IRR}). Iternal rate of return (IRR) is the discount rate at which the net present value of an investment becomes zero. In more specific terms, the IRR of an investment is the discount rate at	which the net present value of costs (negative cash flows) of the investment equals the net present value of the benefits (positive cash flows) of the investment. In this case, the $IRR = 34.27\%$. A project should only be accepted if its IRR is NOT less than the target internal rate of return. When comparing two or more mutually exclusive projects, the project with the highest value of IRR should be considered.
-	
-	The fifth indicator is the \textbf{modified internal rate of return (MIRR)}. IRR assumes that positive cash flows are reinvested at the same rate of return as that of the investment (i.e., the project which generates them). This assumption is questionable as funds are reinvested at a rate that reflects the organization’s cost of capital or return on cash. Consequently, if we stick with the assumption of equal rate for both negative and positive cash flow, then IRR gives an optimistic (i.e., overestimated) rate of return for the cash flows. In addition, for projects with alternating positive and negative cash flows, more than one IRR may be found, which may lead to confusion. To use MIRR, two interest rates are needed: The reinvestment rate for the positive cash flow (PV) and the finance rate for the negative cash flow (NV). The MIRR is given by equation \ref{EQ:MIRR}.
-	
+	The fourth indicator is the \textbf{internal rate of return (IRR}). The internal rate of return (IRR) is the discount rate at which the net present value of an investment becomes zero. In more specific terms, the IRR of an investment is the discount rate at	which the net present value of costs (negative cash flows) of the investment equals the net present value of the benefits (positive cash flows) of the investment. In this case, the $IRR = 34.27\%$. A project should only be accepted if its IRR is NOT less than the target internal rate of return. When comparing two or more mutually exclusive projects, the project with the highest value of IRR should be considered.
+
+	The fifth indicator is the \textbf{modified internal rate of return (MIRR)}. IRR assumes that positive cash flows are reinvested at the same rate of return as the investments (i.e., the project which generates them). This assumption is questionable as funds are reinvested at a rate that reflects the organization’s cost of capital or returns on cash. Consequently, if we stick with the assumption of an equal rate for both negative and positive cash flow, IRR gives an optimistic (i.e., overestimated) rate of return for the cash flows. In addition, more than one IRR may be found for projects with alternating positive and negative cash flows, leading to confusion. Two interest rates are needed to use MIRR: The reinvestment rate for the positive cash flow (PV) and the finance rate for the negative cash flow (NV). The MIRR is given by equation \ref{EQ:MIRR}.
+
 	\begin{equation}
 		MIRR(\%) = \left[ \left[ \cfrac{FV}{-PV} \right]^{\cfrac{1}{EPELP}} -1 \right] \times 100\%
 		\label{EQ:MIRR}
@@ -357,7 +359,7 @@
 	
 	The MIRR value was found to be $21.03\%$, which is less than IRR.
 
-\end{enumerate}
+
 	
 	\clearpage
 %	\VerbatimInput{Input.txt}

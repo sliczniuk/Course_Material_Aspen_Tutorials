@@ -2,7 +2,7 @@
 
 \section{Production of synthetic gas from a biomass}
 
-The task is to simulate a production of synthetic gas from a biomass. One way to do it is to develop an Aspen model. The model is divided into the biomass decomposition, gasification and separation units where the solids and syngas is separated. In the simulation, the gasifier is in steady state, isothermal, and decomposition products are estimated based on the biomass ultimate analysis. Tars are not considered in the model, but ashes are taken into account as non-conventional solids. The biomass is the pine sawdust, which is a common waste product of the forest industry. The process flow diagram is presented on figure \ref{fig:Gasification}.
+The task is to simulate the production of synthetic gas from biomass. One way to do it is to develop an Aspen model. The model is divided into the biomass decomposition, gasification and separation units where the solids and syngas are separated. In the simulation, the gasifier is in an isothermal steady state. Decomposition products are estimated based on the ultimate biomass analysis. The model does not consider tars, but ashes are described as non-conventional solids. Biomass is pine sawdust, which is a common waste product of the forest industry. Figure \ref{fig:Gasification} presents the process flow diagram.
 
 \begin{figure}[h!]
 	\centering
@@ -18,20 +18,20 @@ Add all simulation's components can be found in the table \ref{tbl:Gasification_
 	{\small{
 	\begin{tabular}{ l|l|l|l } 
 		\hline
-		Component ID&	Type			&	Coponent name	&	Alias\\
+		Component ID	&	Type			&	Coponent name	&	Alias	\\
 		\hline 													
-		BIOMASS		&	Nonconventional	&					&		\\		
-		ASH			&	Nonconventional	&					&		\\
-		H2			&	Conventional	&	HYDROGEN		&	H2	\\
-		O2			&	Conventional	&	OXYGEN			&	O2	\\
-		N2			&	Conventional	&	NITROGEN		&	N2	\\
-		CO			&	Conventional	&	CARBON-MONOXIDE	&	CO	\\
-		CO2			&	Conventional	&	CARBON-DIOXIDE	&	CO2	\\
-		METHA-01	&	Conventional	&	METHANE			&	CH4	\\
-		CARBOGRA	&	Solid			&	CARBON-GRAPHITE	&	C	\\
-		S			&	Conventional	&	SULFUR			&	S 	\\
-		H2S			&	Conventional	&	HYDROGEN-SULFIDE&	H2S	\\
-		H3N			&	Conventional	&	AMMONIA			&	H3N \\
+		BIOMASS			&	Nonconventional	&					&			\\		
+		ASH				&	Nonconventional	&					&			\\
+		$H_2$			&	Conventional	&	HYDROGEN		&	$H_2$	\\
+		$O_2$			&	Conventional	&	OXYGEN			&	$O_2$	\\
+		$N_2$			&	Conventional	&	NITROGEN		&	$N_2$	\\
+		$CO$			&	Conventional	&	CARBON-MONOXIDE	&	$CO$	\\
+		$CO_2$			&	Conventional	&	CARBON-DIOXIDE	&	$CO_2$	\\
+		METHA-01		&	Conventional	&	METHANE			&	$CH_4$	\\
+		CARBOGRA		&	Solid			&	CARBON-GRAPHITE	&	$C$		\\
+		$S$				&	Conventional	&	SULFUR			&	$S$ 	\\
+		$H_2S$			&	Conventional	&	HYDROGEN-SULFIDE&	$H_2S$	\\
+		$H_3N$			&	Conventional	&	AMMONIA			&	$H_3N$ 	\\
 		\hline
 	\end{tabular}}}
 	\caption{Simulation component}
@@ -39,7 +39,7 @@ Add all simulation's components can be found in the table \ref{tbl:Gasification_
 \end{table}
 
 %\subsection{Thermodynamic model} \label{CH:GasifierThermodynamics}
-The next step is to select a thermodynamic model. The chosen property method is the Redlich-Kwong-Soave cubic equation of state with Boston-Mathias alpha function ($RKS-BM$). This method is suitable for non-polar or slightly polar mixtures like hydrocarbons and light gases. The data base of Aspen contains only conventional components, which means that the properties of the biomass and the coal needs to be specified manually. In the software the properties of the non-conventional components can be specified in "Method/NC Props" tab. The biomass and the ash properties can be estimated by HCOALGEN and DCOALIGT models. HCOALGEN and DCOALIGT models are used to calculate the enthalpy and density of non-conventional components, respectively. The HCOALGEN model requires these three component attributes for non-conventional components: proximate analysis results (denoted as PROXANAL in Aspen Plus), ultimate analysis results (denoted as ULTANAL in Aspen Plus), and sulfur analysis results (denoted as SULFANAL in Aspen Plus). The proximate analysis gives the weight content of moisture, fixed carbon, volatile matter and ash. The ultimate analysis gives the weight composition of coal in terms of ash, carbon, hydrogen, nitrogen, chlorine, sulfur, and oxygen. The sulfur analysis divides the sulfur content into three types, pyritic, sulfate, and organic sulfur. The DCOALIGT model requires only the two component attributes ULTANAL and SULFANAL. In Aspen Plus it is multiple correlations have been predefined to calculate the enthalpy. The HCOALGEN option codes are shown in table \ref{tbl:HCOALGEN}. 
+The next step is to select a thermodynamic model. The chosen property method is the Redlich-Kwong-Soave cubic equation of state with Boston-Mathias alpha function ($RKS-BM$). This method is suitable for non-polar or slightly polar mixtures like hydrocarbons and light gases. The database of Aspen contains only conventional components, which means that the properties of the biomass and the coal needs to be specified manually. In the software, the properties of the non-conventional components can be specified in the "Method/NC Props" tab. HCOALGEN and DCOALIGT models can estimate biomass and ash properties. HCOALGEN and DCOALIGT models are used to calculate the enthalpy and density of non-conventional components, respectively. The HCOALGEN model requires these three component attributes for non-conventional components: proximate analysis results (denoted as PROXANAL in Aspen Plus), ultimate analysis results (denoted as ULTANAL in Aspen Plus), and sulfur analysis results (denoted as SULFANAL in Aspen Plus). The proximate analysis gives moisture, fixed carbon, volatile matter and ash weight content. The ultimate analysis gives the weight composition of coal in terms of ash, carbon, hydrogen, nitrogen, chlorine, sulfur, and oxygen. The sulfur analysis divides the sulfur content into pyritic, sulfate, and organic sulfur. The DCOALIGT model requires only the two-component attributes ULTANAL and SULFANAL. In Aspen Plus, multiple correlations have been predefined to calculate the enthalpy. The HCOALGEN option codes are shown in table \ref{tbl:HCOALGEN}. 
 
 \begin{table}[h!]
 	\centering
@@ -73,13 +73,13 @@ The next step is to select a thermodynamic model. The chosen property method is 
 	\label{tbl:HCOALGEN}
 \end{table}
 
-Default = 1 for each option code. In the exercise, the HCOALGEN codes for the ash are $[1~1~1~1]$, which means default values. In case of biomass the codes $[6~1~1~1]$, which means that the heat of combustion will be specified. The heat of combustion can be introduced by implementing a new non-conventional parameter in section "Pure Components". Choose the biomass from the list and select HCMOB option to introduce value $18.4 [MJ/kg]$.
+Default = 1 for each option code. In the exercise, the HCOALGEN codes for the ash are $[1~1~1~1]$, which means default values. In biomass, the codes $[6~1~1~1]$ mean that the heat of combustion will be specified. The heat of combustion can be introduced by implementing a new non-conventional parameter in the "Pure Components" section. Choose the biomass from the list and select the HCMOB option to introduce a $18.4 [MJ/kg]$ value.
 
-As there is multiple parameters which needs to evaluated, select option "Estimate all missing parameters" from "Estimation" tab. 
+As multiple parameters need to be evaluated, select the option "Estimate all missing parameters" from the "Estimation" tab. 
 
 %\subsection{Simulation}
 
-Each simulation start from defining an inlet streams. Specify the biomass feed to be $1000 [kg/h]$ at $25 ^\circ C]$ and $1 [bar]$. Enter its Component attribute given in table \ref{tbl:Gasification_Components}. Add proximate, ultimate and sulphur analysis data of biomass feed in NC Solid.
+Each simulation starts by defining an inlet stream. Specify the biomass feed to be $1000 [kg/h]$ at $25 ^\circ C]$ and $1 [bar]$. Enter its Component attribute in table \ref{tbl:Gasification_Components}. Add proximate, ultimate and sulphur analysis data of biomass feed in NC Solid.
 
 \begin{table}[h!]
 	\centering
@@ -111,9 +111,9 @@ Each simulation start from defining an inlet streams. Specify the biomass feed t
 	\label{tbl:Biomass_Composition}
 \end{table}
 
-The biomass is defined as a non-conventional solid in Aspen Plus, as well as the ash present in the biomass. The presence of non-conventional components in the simulation need the stream class MIXINC, which is for models where both conventional solids (carbon) and non-conventional solids are present and when particle size distribution is unknown (go to Simulation-> set up-> specification-> Global setting stream class). 
+The biomass is defined as a non-conventional solid in Aspen Plus and the ash present in the biomass. The presence of non-conventional components in the simulation needs the stream class MIXINC, which is for models where both conventional solids (carbon) and non-conventional solids are present and when particle size distribution is unknown (go to Simulation-> set up-> specification-> Global setting stream class). 
 
-When the simulation parameters are defined, the operational blocks can be introduced. The first operational unit is the decomposer. The solid biomass is decomposed at into gaseous products, which can follow further processing. For the decomposition of biomass, the DECOMP module is Aspen $RYield$ reactor where the biomass is decompose into $H_2$, $O_2$, $N_2$, $H_2O$, $S$, $C$ and ash according to the biomass ultimate analysis data at $700 [^\circ C]$ and $1 [bar]$. The RYield decomposes the biomass into the constituents shown in table \ref{tbl:DecomposerYield}.
+When the simulation parameters are defined, the operational blocks can be introduced. The first operational unit is the decomposer. The solid biomass is decomposed at into gaseous products, which can follow further processing. For the decomposition of biomass, the DECOMP module is Aspen $RYield$ reactor where the biomass is decomposed into $H_2$, $O_2$, $N_2$, $H_2O$, $S$, $C$ and ash according to the biomass ultimate analysis data at $700 [^\circ C]$ and $1 [bar]$. The RYield decomposes the biomass into the constituents shown in table \ref{tbl:DecomposerYield}.
 
 \begin{table}[h!]
 	\centering
@@ -136,11 +136,11 @@ When the simulation parameters are defined, the operational blocks can be introd
 	\label{fig::Gasifier}
 \end{wrapfigure}  
 
-The next operation unit to consider is the gasifier (presented on figure \ref{fig::Gasifier}). For that purpose let's use the Gibbs Reactor will simply produce an outlet in which the Gibbs free energy of the mixture is minimized. A reaction set can be attached to this reactor, but it is important to note that any parameters specified in the set will not be included in the simulation as the minimization of free energy will be the dominant simulation method. An exception to this rule is the stoichiometry of the reaction set. Without a set, stoichiometry will not be considered in the simulation; however, with an attached reaction set with stoichiometric parameters, the simulation will account for them and the outlet conditions can change. However, if a set is attached, only the components specified in the set will reach an equilibrium point; other components will be neglected. The Gibbs Reactor can be very useful if the user does not possess any data pertinent to the reaction or desires only a simulation of the equilibrium state. At the very least, the Gibbs Reactor can provide simulation estimates as a starting point for a more rigorous simulation through another reactor type.
+The next operation unit is the gasifier (presented in figure \ref{fig::Gasifier}). For that purpose, let's use the Gibbs Reactor will produce an outlet in which the Gibbs free energy of the mixture is minimised. A set of reactions can be suggested in the reactor model. However, it is important to note that the suggested reaction might not be included in the simulation as free energy minimisation will be the dominant method. An exception to this rule is the stoichiometry of the reaction set. Without a set, stoichiometry will not be considered in the simulation; however, with an attached reaction set with stoichiometric parameters, the simulation will account for them, and the outlet conditions can change. However, if a set is attached, only the components specified in the set will reach an equilibrium point; other components will be neglected. The Gibbs Reactor can be very useful if the user does not possess any data pertinent to the reaction or desires only a simulation of the equilibrium state. At the very least, the Gibbs Reactor can provide simulation estimates as a starting point for a more rigorous simulation through another reactor type.
 
-The pressure is at $30 [bar]$ and $900 [^\circ C]$, which is a typical value for real world gasifiers. Oxygen $600 [kg/h]$ is used as the oxidizing agent, which is preheated to $700 [^\circ C]$. The possible products of the gasification were predefined to be: $H_2$, $O_2$, $N_2$, $H_2O$, $S$, $C(solid)$, $CO$, $CO_2$, $H_2S$, $CH_4$, $C$ and $NH_3$. Aspen calculated the product distributions at various conditions.
+The pressure is at $30 [bar]$ and $900 [^\circ C]$, which is a typical value for real-world gasifiers. Oxygen $600 [kg/h]$ is used as the oxidising agent, which is preheated to $700 [^\circ C]$. The possible products of the gasification were predefined to be: $H_2$, $O_2$, $N_2$, $H_2O$, $S$, $C(solid)$, $CO$, $CO_2$, $H_2S$, $CH_4$, $C$ and $NH_3$. Aspen calculated the product distributions at various conditions.
 
-Finally, in the separation part of the simulation the solids are separated from the hot gases in SEP1, which is an Aspen SSplit. The SSPLIT assumes perfect separation of solid particles from the main stream. The SEP2 column is a flash column used to separate the condensate. For this the gases is cooled to $80 [^\circ C]$ with heat exchanger COOL1. The product of the process is the stream SYNGAS, which contains the main syngas components $CO$ and $H_2$, but also contains impurities such as $H_2S$ and $NH_3$. The product of this process need to be further purified in a separate purification facility to be useful feedstock for other processes.
+Finally, in the simulation's separation section, the solids are separated from the hot gases in SEP1, which is an Aspen SSplit. The SSPLIT assumes perfect separation of solid particles from the mainstream. The SEP2 column is a flash column used to separate the condensate. The gases are cooled to $80 [^\circ C]$ with heat exchanger COOL1. The product of the process is the stream SYNGAS, which contains the main syngas components $CO$ and $H_2$, but also contains impurities such as $H_2S$ and $NH_3$. The product of this process needs to be further purified in a separate purification facility to be helpful feedstock for other processes.
 
 The configuration of the simulation and its results are presented below:
 
@@ -154,15 +154,14 @@ The configuration of the simulation and its results are presented below:
 \newpage
 \section{The fast pyrolysis of the biomass}
 
-Biomass fast pyrolysis is a highly non-equilibrium reaction where the main components (lignin, celluloses and hemicelluloses) are broken down into shorter molecules like acids, aldehydes, phenols, sugars and non-condensable gases. More than 200 different components have are identified
-in pyrolysis oil and their share depends on the feedstock, process parameters and on the measurement equipment. Therefore, modelling of biomass fast pyrolysis is not trivial. The following assumptions will allow modelling of biomass fast pyrolysis:
+Biomass fast pyrolysis is a highly non-equilibrium reaction where the main components (lignin, celluloses and hemicelluloses) are broken down into shorter molecules like acids, aldehydes, phenols, sugars and non-condensable gases. More than 200 different components have been identified in pyrolysis oil, and their share depends on the feedstock, process parameters and measurement equipment. Therefore, modelling biomass fast pyrolysis is not trivial. However, the following assumptions will allow the modelling of biomass fast pyrolysis:
 
 \begin{itemize}
-	\item Biomass, ash, char and lignin are define as non-conventional component (neither molecular weight nor molecular structure can be given); Biomass attributes are computed with AspenPlus’ built-in enthalpy and density models HCOALGEN and DCOALLIGT (for reference check chapter \ref{CH::GasifierThermodynamics})
-	\item Pyrolysis is modelled with a yield reactor where user defines the pyrolysis products.
+	\item Biomass, ash, char, and lignin are defined as non-conventional components (neither molecular weight nor molecular structure can be given); Biomass attributes are computed with AspenPlus’ built-in enthalpy and density models HCOALGEN and DCOALLIGT (for reference check chapter \ref{CH::GasifierThermodynamics})
+	\item Pyrolysis is modelled with a yield reactor where the user defines the pyrolysis products.
 \end{itemize}
 
-The process flow diagram is presented on figure \ref{fig:Pyrolasis}. The biomass is fed directly to the pyrolysis unit, which operates at high temperature and atmospheric pressure. Then the gaseous streams is cooled down, and two-phase mixture is separated.
+Figure \ref{fig:Pyrolasis} presents the process flow diagram. The biomass is fed directly to the pyrolysis unit, which operates at high temperature and atmospheric pressure. Then the gaseous streams are cooled down, and the two-phase mixture is separated.
 
 \begin{figure}[h!]
 	\centering
@@ -174,9 +173,9 @@ The process flow diagram is presented on figure \ref{fig:Pyrolasis}. The biomass
 %\subsection{Thermodynamic model}
 Add all the conventional components in the component list as given in the table \ref{tbl:Pyrolysis_components} and non-conventional components BIOMASS, ASH, CHAR and LIGNIN. 
 
-The thermodynamic method used in this exercise is UNIQUAC (universal quasichemical), which is an activity coefficient model used in description of phase equilibria The model is a so-called lattice model and has been derived from a first order approximation of interacting molecule surfaces in statistical thermodynamics. The model is however not fully thermodynamically consistent due to its two liquid mixture approach. In this approach the local concentration around one central molecule is assumed to be independent from the local composition around another type of molecule. The UNIQUAC model also serves as the basis of the development of the group contribution method UNIFAC, where molecules are subdivided into functional groups. In fact, UNIQUAC is equal to UNIFAC for mixtures of molecules, which are not subdivided; e.g. the binary systems water-methanol, methanol-acryonitrile and formaldehyde-DMF. 
+The thermodynamic method used in this exercise is UNIQUAC (universal quasichemical), an activity coefficient model used to describe phase equilibria. This model belongs to a lattice model derived from a first-order approximation of interacting molecule surfaces in statistical thermodynamics. The model is, however, not fully thermodynamically consistent due to its two-liquid mixture approach. In this approach, the local concentration around one central molecule is assumed to be independent of the local composition around another type of molecule. The UNIQUAC model also serves as the basis for developing the group contribution method UNIFAC, where molecules are subdivided into functional groups. In fact, UNIQUAC is equal to UNIFAC for mixtures of molecules which are not subdivided, e.g. the binary systems water-methanol, methanol-acrylonitrile and formaldehyde-DMF. 
 
-The properties of the non-conventional components need to define. To do so by introducing default values for HCOALGEN and DCOALLIGT.
+The non-conventional components' properties need to be defined through values for HCOALGEN and DCOALLIGT.
 
 \begin{table}[h!]
 	\centering
@@ -215,9 +214,9 @@ The properties of the non-conventional components need to define. To do so by in
 
 %\subsection{Simulation}
 
-In the Simulation section, Main Flowsheet, select a yield reactor and connect IN and Out streams. In the Setup sheet, set Stream class to ‘MIXNC’. This will enable calculation of non-conventional components (go to Simulation-> set up-> specification-> Global setting stream class). 
+In the Simulation section, Main Flowsheet, select a yield reactor and connect IN and Out streams. In the Setup sheet, set the Stream class to ‘MIXNC’. This will enable the calculation of non-conventional components (go to Simulation-> set up-> specification-> Global setting stream class). 
 
-The next step is to define Biomass feed at 25 °C, 1bar and 1kg/s. Use Component Attribute given in table \ref{tbl:Biomass_Composition_Pyrolysis}. The biomass strem enters the yield reactor which represent the pyrolysis unit. The reaction works at following conditions: $1 [bar]$ and $500 [^\circ C]$. The reaction yields are shown in table \ref{tbl:Biomass_Composition_Pyrolysis}. In the reactor block, the non-conventional product components need to be defined by their analyses according to tables \ref{tbl:Lingin_Composition_Pyrolysis}, \ref{tbl:Char_Composition_Pyrolysis} and \ref{tbl:Ash_Composition_Pyrolysis}. The products compositions should be included in "Comp. Attr." tab of the reactor unit.
+The next step is to define Biomass feed at 25 $^\circ C$, 1 bar and 1 kg/s. Use Component Attribute is given in table \ref{tbl:Biomass_Composition_Pyrolysis}. The biomass stream enters the yield reactor, which represents the pyrolysis unit. The reaction works at the following conditions: $1 [bar]$ and $500 [^\circ C]$. The reaction yields are shown in table \ref{tbl:Biomass_Composition_Pyrolysis}. In the reactor block, the non-conventional product components need to be defined by their analyses according to tables \ref{tbl:Lingin_Composition_Pyrolysis}, \ref{tbl:Char_Composition_Pyrolysis} and \ref{tbl:Ash_Composition_Pyrolysis}. The product compositions should be included in the "Comp. Attr." tab of the reactor unit.
 
 \begin{table}[h!]
 	\centering
@@ -341,7 +340,7 @@ The next step is to define Biomass feed at 25 °C, 1bar and 1kg/s. Use Component
 	\caption{The composition of pyrolysis products}
 \end{table}
 
-The outlet stream from the reactor flows to the separator. The solid particles The SSPLIT assumes perfect separation of solid particles from the main stream. Then the mixture of gaseous and liquid products enter the heat exchanger, which work at $30 [^\circ C]$ and $1 [bar]$. As the results the condensation occurs. The following step is to separate vapour from the liquid phase in the flash. The flash is assumed to be adiabatic and isobaric. The liquid stream is the main product and represents the bio-oil. 
+The outlet stream from the reactor flows to the separator. The solid particles The SSPLIT assumes perfect separation of solid particles from the mainstream. Then the mixture of gaseous and liquid products enters the heat exchanger, which works at $30 [^\circ C]$ and $1 [bar]$. As a result, condensation occurs. The following step separates vapour from the liquid phase in a flash. The flash is assumed to be adiabatic and isobaric. The liquid stream is the main product and represents the bio-oil. 
 
 \newpage %\subsection{Results}
 \begin{figure}[h!]
