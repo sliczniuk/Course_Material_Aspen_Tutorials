@@ -6,7 +6,16 @@ Following the work of \cite{SegoviaHernandez2020}, let's analyse the esterificat
 	\underbrace{CH_3CHOHCOOH}_{Lactic~Acid} + \underbrace{CH_3OH}_{Methanol} \rightarrow \underbrace{CH_3CHOHCOOCH_3}_{Methyl~Lactate} + \underbrace{H_2O}_{Water}
 \end{equation}
 
-The reaction can autocatalyse using the acid for temperatures higher than approximately $340 K$. The kinetic model is used to represent the reaction rate, but the effect of the reverse reaction is neglected. Thus, the reaction rate is expressed as follows:
+The simplified process flow diagram, is presented on Figure \ref{fig:Ester_PFD}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Proces_Analysis/PFD.jpg}
+	\caption{Process flow diagram}
+	\label{fig:Ester_PFD}
+\end{figure}
+
+The kinetic model is used to represent the reaction rate, but the effect of the reverse reaction is neglected. Thus, the reaction rate is expressed as follows:
 
 \begin{equation}
 	r = k_1 \exp\left( \frac{-E_a}{RT} \right) a^2_{LACTIC} a_{MeOH}
@@ -18,7 +27,7 @@ where $k_1$ is equal to $6.024 \times 10^8 ~[mol \cdot min^{-1}]$, $E_A$ is equa
 
 The thermodynamics is calculated based on the UNIFAC method. In statistical thermodynamics, the UNIFAC method (UNIQUAC Functional-group Activity Coefficients) is a semi-empirical system for predicting non-electrolyte activity in non-ideal mixtures. UNIFAC uses the functional groups present on the molecules that make up the liquid mixture to calculate activity coefficients. The activity of each of the solutions can be calculated by using interactions for each of the functional groups present on the molecules and some binary interaction coefficients. The UNIFAC correlation attempts to break down the problem of predicting interactions between molecules by describing molecular interactions based on the functional groups attached to the molecule. This is done in order to reduce the sheer number of binary interactions that would be needed to be measured to predict the state of the system.
 
-In this case, $100~[kmol/h]$ of lactic acid is allowed to enter a tubular reactor. Methanol is also fed to the reactor, with a methanol/lactic acid mole ratio of $3:1$. The reactor operates at $340~[K]$ and $1~[bar]$. Esterification of lactic acid occurs inside the vessel; thus, the stream leaving the equipment contains methyl lactate, water, and unreacted methanol and lactic acid. The reaction occurs in a Plug Flow Reactor (PFR). The first parameter to be decided is the characteristic of the reactor, which in this case is set to \textit{reactor with specified temperature}, which means that the feed temperature determines the reactor's temperature. To set the initial simulation the reactor length is assumed to be $5~[m]$, and the diameter to be $0.1~[m]$. 
+Let's initiate the simulation by setting up the reactor block first. In this case, $100~[kmol/h]$ of lactic acid is allowed to enter a tubular reactor. Methanol is also fed to the reactor, with a methanol/lactic acid mole ratio of $3:1$. The reactor operates at $340~[K]$ and $1~[bar]$. Esterification of lactic acid occurs inside the vessel; thus, the stream leaving the equipment contains methyl lactate, water, and unreacted methanol and lactic acid. The reaction occurs in a Plug Flow Reactor (PFR). The first parameter to be decided is the characteristic of the reactor, which in this case is set to \textit{reactor with specified temperature}, which means that the feed temperature determines the reactor's temperature. To set the initial simulation the reactor length is assumed to be $5~[m]$, and the diameter to be $0.1~[m]$. 
 
 Because the kinetic model is provided as a power law, the reaction type is selected as \textit{POWERLAW}. The coefficients of the reactants (lactic acid and methanol) are set as -1, and the coefficients of the products (methyl lactate and water) are set as 1. The exponent is defined as 2 for lactic acid and 1 for methanol because it is the power for each component activity in the kinetic expression. The products are not involved in the kinetic model for the straight reaction. Thus, the field is left blank, which implies an exponent of 0. The values for the pre-exponential factor $k_1$ and the activation energy $E_a$ are known. The reference temperature $T_0$ is not specified; the exponent n is set as 0 to allow temperature dependence to be modelled using the Arrhenius equation. Finally, the basis for concentration is selected as Mole gamma to allow the kinetic calculations to be based on the activities of the component.
 
@@ -43,9 +52,26 @@ The simulation results presented in Table \ref{tab:Ester_Initial}.
 	\label{tab:Ester_Initial}
 \end{table}
 
-This reaction is characterized by low conversion to methyl lactate ($\approx 3.3~mol\%$). Therefore, the reactor design is considered inefficient enough to convert to methyl lactate.
+This reaction is characterized by low conversion to methyl lactate ($\approx 3.3~mol\%$). The reactor design is considered inefficient enough to convert to methyl lactate.
 
 \section{Heat Exchangers}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[trim= 0cm 0.1cm 0.1cm 0.5cm, clip, width=\textwidth]{Figures/Proces_Analysis/HX.png}
+		\caption{Stream temperatures along the heat exchanger}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Figures/Proces_Analysis/HX2.jpg}
+		\caption{External dimension of the heat exchanger}
+	\end{subfigure}
+	\caption{Results of heat exchanger design}
+	\label{fig:Ester_HX}
+\end{wrapfigure}
 
 Let's assume that the reactants' temperature is not 340[K] as specified before, but 293 [K]. Therefore, a heat exchanger is needed to raise the temperature of the inlet stream. As the temperature difference is relatively low, we assume that the thermal fluid is hot water (temperature 353 [K] and flowrate equal 1000 [kmol/h]). The \textit{HeatX} module will be used in this simulation. First, the shortcut calculations are performed to set \textit{Cold stream outlet temperature} to be 340 [K]. Then, the \textit{Shell \& Tube} type of heat exchanger is selected to perform more detailed calculations. Remember, the more precise calculations might be characterised by lower efficiency than the shortcut calculations, for example, by considering a pressure drop.
 We use interactive sizing is used to find the heat exchanger geometry. Luckily, there is no error; nevertheless, some warnings are present. For simplicity, we will modify the simulation to decrease the pressure drop to a minimum (0.07 [bar]), as we do not simulate pumps in this work. However, checking if the pressure drop doesn't force a phase change is always recommended.
@@ -54,33 +80,12 @@ In non-conventional cases, each heat exchanger section might be specified by ass
 
 The suggested design is a classic Shell\&Tube heat exchanger with one pass. Figure \ref{fig:Ester_HX} shows the final result of the heat exchanger design.
 
-\begin{figure}[h!]
-	\centering
-	\begin{subfigure}[b]{0.7\textwidth}
-		\centering
-		\includegraphics[trim= 0cm 0.1cm 0.1cm 0.5cm, clip, width=\textwidth]{Figures/Proces_Analysis/HX.png}
-		\caption{Stream temperatures along the heat exchanger}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.9\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Figures/Proces_Analysis/HX2.jpg}
-		\caption{External dimension of the heat exchanger}
-	\end{subfigure}
-	\caption{Results of heat exchanger design}
-	\label{fig:Ester_HX}
-\end{figure}
-
-
-
 \section{Sensitivity Analysis}
 
 The \textit{sensitivity analysis} allows evaluating a parameter's influence on model output. In this case, the reactor's diameter and length are selected as degrees of freedom and can be manipulated. The system output is the amount of the methyl lactate at the reactor outlet.
 
 In \textit{Vary} section, two variables are created: one corresponds to the length of the reactor, while the second one is the diameter of the reactor. Both variables are \textit{Block-Var} Type. Let the length change from $1~[m]$ to $100~[m]$ every $1[m]$, and the diameter change from $0.1-1.5~[m]$ every $0.1~[m]$.
-In \textit{Define} section, model output is defined. The model output is affected by a change from \textit{Vary} section. The output variable, in this case, is the mole flowrate of methyl lactate in the outlet stream. The mole flowrate can be found in the \textit{Streams} category.
-
-The sensitivity analysis results are in Figure \ref{fig:Ester_Sensitivity_Analysis}.
+In \textit{Define} section, model output is defined. The model output is affected by a change from \textit{Vary} section. The output variable, in this case, is the mole flowrate of methyl lactate in the outlet stream. The mole flowrate can be found in the \textit{Streams} category. The sensitivity analysis results are in Figure \ref{fig:Ester_Sensitivity_Analysis}.
 
 \begin{figure}[h!]
 	\centering

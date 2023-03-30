@@ -1,14 +1,12 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
+The top-level auxiliary file: Aspen_Tutorial_Plant_Design.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: ./TeX_files/Preface.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: ./TeX_files/Thermochemical.aux
 Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: ./TeX_files/Esterification.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: ./TeX_files/HeatExchanger.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: ./TeX_files/EconomicAnalysis.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
@@ -17,7 +15,7 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: mybibfile.bib
 You've used 3 entries,
             2481 wiz_defined-function locations,
-            580 strings with 5039 characters,
+            579 strings with 5056 characters,
 and the built_in function-call counts, 888 in all, are:
 = -- 72
 > -- 29
