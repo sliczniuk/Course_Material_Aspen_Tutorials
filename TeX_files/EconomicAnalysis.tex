@@ -2,7 +2,7 @@
 
 \section{Acetic anhydride production}
 
-	We use the production of acetic anhydride from acetone to demonstrate how to evaluate the economic attributes of a chemical process. We are going to follow the book of \cite{AlMalah2016}. The process flowsheet for acetic anhydride production is made of PFR with a recycle for the unreacted acetone, followed by two downstream separation units: rectifying and distillation column and finally, the conversion of ketene and acetic acid into acetic anhydride using CSTR. The flowsheet is presented on figure \ref{fig:Acetic_Flowsheet}
+	We use the production of acetic anhydride from acetone to demonstrate how to evaluate the economic attributes of a chemical process. We are going to follow the book of \cite{AlMalah2016}. The process flowsheet for acetic anhydride production is made of PFR with a recycle for the unreacted acetone, followed by two downstream separation units: rectifying and distillation column and finally, the conversion of ketene and acetic acid into acetic anhydride using CSTR. The flowsheet is presented on Figure \ref{fig:Acetic_Flowsheet}
 	
 	\begin{figure}[h!]
 		\centering
@@ -58,7 +58,7 @@
 		
 	\item Investment options
 	
-	In "Navigation" panel, let us go to "Setup" | "Costing Options" | "Costing options" tab form to specify "operating life of plant", "length of plant startup" and "start of basic engineering". %The figure \ref{fig:Investment_Aspen_Plus} shows the "costing option" window. 
+	In "Navigation" panel, let us go to "Setup" | "Costing Options" | "Costing options" tab form to specify "operating life of plant", "length of plant startup" and "start of basic engineering". %The Figure \ref{fig:Investment_Aspen_Plus} shows the "costing option" window. 
 	
 %	\begin{figure}[h!]
 %		\centering
@@ -255,7 +255,7 @@
 
 	where $t$ is the time of the cash flow, $r$ is the discount rate, i.e. the return that could be earned per unit of time on investment with similar risk, and $R_{t}$ is the net cash flow, i.e. cash inflow – cash outflow, at time $t$ and $N$ is the number of time intervals.
 	
-	Based on the project evaluation performed in \ref{ste:ProjectEvaluation}, the PV and NPV are found. The PV and NPV curves are presented in figure \ref{fig:CashFlow}.
+	Based on the project evaluation performed in \ref{ste:ProjectEvaluation}, the PV and NPV are found. The PV and NPV curves are presented in Figure \ref{fig:CashFlow}.
 	
 	\begin{figure}[h!]
 		\centering
@@ -314,7 +314,7 @@
 		\label{EQ:PI}
 	\end{equation}
 	
-	If the profitability index is greater than one, then the project appears to be profitable. If this index is less than one, the project appears unprofitable. If this number equals one, the project incurs no losses or gains (break-even point). PI's time evolution is shown in figure \ref{fig:PI}.
+	If the profitability index is greater than one, then the project appears to be profitable. If this index is less than one, the project appears unprofitable. If this number equals one, the project incurs no losses or gains (break-even point). PI's time evolution is shown in Figure \ref{fig:PI}.
 	
 	\begin{figure}[h!]
 		\centering
@@ -356,11 +356,13 @@
 		\label{EQ:MIRR}
 	\end{equation}
 
-	where $EPELP$ is the "End Period for Economic Life of Project" (i.e., $EPELP=10$ years, by default), $PV$ is the sum of cash flows (brought to the beginning of the first period), and $FV$ is the sum of positive cash flows (brought to the end of the last period).
+	where EPELP is the "End Period for Economic Life of Project" (i.e., EPELP=10 years, by default), $PV$ is the sum of cash flows (brought to the beginning of the first period), and $FV$ is the sum of positive cash flows (brought to the end of the last period).
 	
 	The MIRR value was found to be $21.03\%$, which is less than IRR.
 
-
+	\section{APEA without process simulation}
+	
+	It is not always possible to simulate a whole production process, in particular in case of bio-based processes. The APEA can be used to estimate an equipment price, based on limited amount of informations. To use the APEA without the process simulation, piece of equipment from the \textit{Process equipment} section. \textit{Process equipment} section is usually located in the top-right corner in the \textit{Components} tab. Then, an analysed equipment needs to be added in the \textit{list} section by drag-and-drop. The selection of an equipment from \textit{Process equipment} section corresponds to the mapping procedure, which was discussed before. The drag-and-drop will cause the opening of a new windows called \textit{New Component information}, where the name of analysed machine needs to be assign. After acceptance of the equipment name, a new windows with technical sheet will open. Depending on the equipment, different information about the equipment size are required to evaluate the cost. The necessary information are highlighted. In case of a vessel, a necessary information is it radius and height. If a heat exchanger is discussed, then a heat transfer area needs to be know a priori. 
 	
 	\clearpage
 %	\VerbatimInput{Input.txt}

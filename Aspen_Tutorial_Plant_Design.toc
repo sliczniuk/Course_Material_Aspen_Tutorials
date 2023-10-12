@@ -11,4 +11,5 @@
 \contentsline {section}{\numberline {3.1}Acetic anhydride production}{19}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Economic analysis steps}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Investment indicators}{24}{section.3.3}%
-\contentsline {chapter}{Bibliography}{29}{equation.3.3.5}%
+\contentsline {section}{\numberline {3.4}APEA without process simulation}{27}{section.3.4}%
+\contentsline {chapter}{Bibliography}{29}{section.3.4}%
