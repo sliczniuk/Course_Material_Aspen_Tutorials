@@ -362,7 +362,54 @@
 
 	\section{APEA without process simulation}
 	
-	It is not always possible to simulate a whole production process, in particular in case of bio-based processes. The APEA can be used to estimate an equipment price, based on limited amount of informations. To use the APEA without the process simulation, piece of equipment from the \textit{Process equipment} section. \textit{Process equipment} section is usually located in the top-right corner in the \textit{Components} tab. Then, an analysed equipment needs to be added in the \textit{list} section by drag-and-drop. The selection of an equipment from \textit{Process equipment} section corresponds to the mapping procedure, which was discussed before. The drag-and-drop will cause the opening of a new windows called \textit{New Component information}, where the name of analysed machine needs to be assign. After acceptance of the equipment name, a new windows with technical sheet will open. Depending on the equipment, different information about the equipment size are required to evaluate the cost. The necessary information are highlighted. In case of a vessel, a necessary information is it radius and height. If a heat exchanger is discussed, then a heat transfer area needs to be know a priori. 
+%	\begin{wrapfigure}{r}{0.35\textwidth}
+%		\centering
+%		\vspace{-15pt}
+%		\includegraphics[trim = 2cm 2cm 0cm 1cm,clip, width=0.34\textwidth]{Figures/Econmic_Analysis/Equipment_selection.jpg}
+%		\vspace{-10pt}
+%		\caption{Equipment selection}
+%		\label{fig:Equipment_selection}
+%		\vspace{-15pt}
+%	\end{wrapfigure}
+
+	It is not always possible to simulate a whole production process with Aspen Plus, particularly in bio-based processes. The APEA can be used to estimate an equipment price based on a limited amount of information from hand-made calculations. To use the APEA without the process simulation, select a piece of equipment from the \textit{Process equipment} section. \textit{Process equipment} section is usually located in the top-right corner in the \textit{Components} tab (Figure \ref{fig:Equipment_selection}). Then, an analysed equipment needs to be added in the \textit{List} section by drag-and-drop. The selection of equipment from \textit{Process equipment} section corresponds to the mapping procedure discussed before. The drag-and-drop will cause the opening of new windows called \textit{New Component information}, where the name of the analyzed machine needs to be assigned. After acceptance of the equipment name, a new window with a technical sheet will open. 
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[trim = 0cm 0cm 0cm 0cm,clip, width=\textwidth]{Figures/Econmic_Analysis/HX.jpg}
+		\caption{Equipment selection}
+		\label{fig:Equipment_selection}
+	\end{figure}
+
+	The tab with a heat exchanger is presented on the right-hand side of Figure \ref{fig:Equipment_selection}. Necessary pieces of information for the cost estimation are highlighted. In this case, a heat transfer area needs to be known a priori. In addition to the heat transfer area, TEMA symbols representing the front end, the shell, and the rear end need to be selected. The selection of TEMA symbols differs from case to case and should be justified.
+	
+	When all the necessary pieces of information are included, the \textit{Apply} button is used to save the changes. Let's assume that the heat transfer is $10m^2$ and the TEMA symbols are A, E, and L. The \textit{Evaluate} button is used to prepare a report that summarizes all the costs related to the equipment, as presented in Table \ref{tab:cost_HX}. If a percentage method is used in the student's report to estimate the plant cost, then the \textit{equipment and setting} should be used.
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{l|c|cc}            
+			\hline 
+			& MATERIAL & MANPOWER & MANPOWER \\ \hline
+			& USD & USD & MANHOURS \\ \hline                                       
+			EQUIPMENT\&SETTING & 14700 & 954 & 29 \\ 
+			PIPING 	  		 & 19406 & 12387 & 366 \\
+			CIVIL 			 & 1214 & 1724 & 63 \\
+			STRUCTURAL STEEL & 0 & 0 & 0 \\ 
+			INSTRUMENTATION  & 12366 & 4251 & 124  \\
+			ELECTRICAL       & 0 & 0 & 0  \\
+			INSULATION       & 6622 & 5630 & 219  \\
+			PAINT            & 405 & 1090 & 43  \\
+			\hline                                                                 
+			SUBTOTAL 		 & 54714 & 26036 & 844 \\
+			INSTALLED DIRECT COST & 80800 & & \\
+			\hline                                      
+		\end{tabular}
+		\caption{The cost estimation example}
+		\label{tab:cost_HX}
+	\end{table}
+
+	Additional modifications might be necessary as an equipment design changes from case to case. If an operating temperature or pressure differs from the standard conditions, then the appropriate change in the \textit{design temperature} and \textit{design pressure} sections should be implemented. For instance, the change in operating pressure affects the wall thickness, which further influences the equipment. 
+	The materials used to build equipment should be selected depending on the reactants. If there are some corrosive substances, then \textit{material} should be used to select the appropriate material.
 	
 	\clearpage
 %	\VerbatimInput{Input.txt}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.9.27)  12 OCT 2023 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.9.27)  17 OCT 2023 14:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1308,7 +1308,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (TeX_files/Thermochemical.tex
 Chapter 1.
-<Figures/TchermochemicalProcesses/Gasification.jpeg, id=113, 1757.06438pt x 438
+<Figures/TchermochemicalProcesses/Gasification.jpeg, id=114, 1757.06438pt x 438
 .8897pt>
 File: Figures/TchermochemicalProcesses/Gasification.jpeg Graphic file (type jpg
 )
@@ -1323,7 +1323,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./Figures/TchermochemicalProcesses/Gasification.jpeg>] [2]
-<Figures/TchermochemicalProcesses/Gasifier.png, id=138, 472.76625pt x 406.51875
+<Figures/TchermochemicalProcesses/Gasifier.png, id=139, 472.76625pt x 406.51875
 pt>
 File: Figures/TchermochemicalProcesses/Gasifier.png Graphic file (type png)
 <use Figures/TchermochemicalProcesses/Gasifier.png>
@@ -1331,7 +1331,7 @@ Package pdftex.def Info: Figures/TchermochemicalProcesses/Gasifier.png  used on
  input line 133.
 (pdftex.def)             Requested size: 170.71393pt x 146.79324pt.
  [3] [4 <./Figures/TchermochemicalProcesses/Gasifier.png>]
-<Figures/TchermochemicalProcesses/GasificationResults.jpg, id=154, 911.65594pt 
+<Figures/TchermochemicalProcesses/GasificationResults.jpg, id=155, 911.65594pt 
 x 894.34125pt>
 File: Figures/TchermochemicalProcesses/GasificationResults.jpg Graphic file (ty
 pe jpg)
@@ -1344,7 +1344,7 @@ pg  used on input line 150.
 LaTeX Warning: Reference `CH::GasifierThermodynamics' on page 6 undefined on in
 put line 160.
 
-<Figures/TchermochemicalProcesses/Pyrolysis.jpeg, id=161, 1720.17656pt x 514.17
+<Figures/TchermochemicalProcesses/Pyrolysis.jpeg, id=162, 1720.17656pt x 514.17
 094pt>
 File: Figures/TchermochemicalProcesses/Pyrolysis.jpeg Graphic file (type jpg)
 <use Figures/TchermochemicalProcesses/Pyrolysis.jpeg>
@@ -1359,7 +1359,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7]
-<Figures/TchermochemicalProcesses/PyrolysisResults.jpg, id=182, 735.49782pt x 1
+<Figures/TchermochemicalProcesses/PyrolysisResults.jpg, id=183, 735.49782pt x 1
 162.3425pt>
 File: Figures/TchermochemicalProcesses/PyrolysisResults.jpg Graphic file (type 
 jpg)
@@ -1382,20 +1382,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 Chapter 2.
-<Figures/Proces_Analysis/PFD.jpg, id=200, 1496.59125pt x 581.92406pt>
+<Figures/Proces_Analysis/PFD.jpg, id=201, 1496.59125pt x 581.92406pt>
 File: Figures/Proces_Analysis/PFD.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/PFD.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/PFD.jpg  used on input line 13
 .
 (pdftex.def)             Requested size: 426.79135pt x 165.94775pt.
 [11 <./Figures/Proces_Analysis/PFD.jpg>]
-<Figures/Proces_Analysis/HX.png, id=211, 444.15938pt x 384.6872pt>
+<Figures/Proces_Analysis/HX.png, id=212, 444.15938pt x 384.6872pt>
 File: Figures/Proces_Analysis/HX.png Graphic file (type png)
 <use Figures/Proces_Analysis/HX.png>
 Package pdftex.def Info: Figures/Proces_Analysis/HX.png  used on input line 63.
 
 (pdftex.def)             Requested size: 213.39568pt x 177.75476pt.
-<Figures/Proces_Analysis/HX2.jpg, id=213, 961.34157pt x 339.51843pt>
+<Figures/Proces_Analysis/HX2.jpg, id=214, 961.34157pt x 339.51843pt>
 File: Figures/Proces_Analysis/HX2.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/HX2.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/HX2.jpg  used on input line 69
@@ -1403,7 +1403,7 @@ Package pdftex.def Info: Figures/Proces_Analysis/HX2.jpg  used on input line 69
 (pdftex.def)             Requested size: 213.39568pt x 75.36258pt.
  [12] [13 <./Figures/Proces_Analysis/HX.png> <./Figures/Proces_Analysis/HX2.jpg
 >]
-<Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg, id=230, 1753.3003
+<Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg, id=231, 1753.3003
 1pt x 749.80125pt>
 File: Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg Graphic file 
 (type jpg)
@@ -1411,7 +1411,7 @@ File: Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg Graphic file
 Package pdftex.def Info: Figures/Proces_Analysis/Parametric_sensitivity_analysi
 s.jpg  used on input line 94.
 (pdftex.def)             Requested size: 422.52577pt x 180.6882pt.
-<Figures/Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg, id=231, 1
+<Figures/Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg, id=232, 1
 746.525pt x 761.09344pt>
 File: Figures/Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg Graph
 ic file (type jpg)
@@ -1419,7 +1419,7 @@ ic file (type jpg)
 Package pdftex.def Info: Figures/Proces_Analysis/Parametric_sensitivity_analysi
 s_inverse.jpg  used on input line 99.
 (pdftex.def)             Requested size: 422.52577pt x 184.11783pt.
-<Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg, id=234
+<Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg, id=235
 , 1746.525pt x 752.0597pt>
 File: Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg Gr
 aphic file (type jpg)
@@ -1429,7 +1429,7 @@ s_conversion.jpg  used on input line 120.
 (pdftex.def)             Requested size: 426.79135pt x 183.78pt.
  [14 <./Figures/Proces_Analysis/Parametric_sensitivity_analysis.jpg> <./Figures
 /Proces_Analysis/Parametric_sensitivity_analysis_inverse.jpg>]
-<Figures/Proces_Analysis/Distillation.jpg, id=243, 868.74562pt x 751.30687pt>
+<Figures/Proces_Analysis/Distillation.jpg, id=244, 868.74562pt x 751.30687pt>
 File: Figures/Proces_Analysis/Distillation.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/Distillation.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/Distillation.jpg  used on inpu
@@ -1440,14 +1440,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <./Figures/Proces_Analysis/Parametric_sensitivity_analysis_conversion.jpg>
 ] [16 <./Figures/Proces_Analysis/Distillation.jpg>]
-<Figures/Proces_Analysis/Column_Design_Auto.jpg, id=259, 1762.33406pt x 773.891
+<Figures/Proces_Analysis/Column_Design_Auto.jpg, id=260, 1762.33406pt x 773.891
 25pt>
 File: Figures/Proces_Analysis/Column_Design_Auto.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/Column_Design_Auto.jpg>
 Package pdftex.def Info: Figures/Proces_Analysis/Column_Design_Auto.jpg  used o
 n input line 197.
 (pdftex.def)             Requested size: 426.79135pt x 187.41452pt.
-<Figures/Proces_Analysis/Column_Design_Manual.jpg, id=261, 1759.32281pt x 719.6
+<Figures/Proces_Analysis/Column_Design_Manual.jpg, id=262, 1759.32281pt x 719.6
 8875pt>
 File: Figures/Proces_Analysis/Column_Design_Manual.jpg Graphic file (type jpg)
 <use Figures/Proces_Analysis/Column_Design_Manual.jpg>
@@ -1463,7 +1463,7 @@ _Analysis/Column_Design_Manual.jpg>]
 
  (TeX_files/EconomicAnalysis.tex
 Chapter 3.
-<Figures/Econmic_Analysis/Flowsheet.jpg, id=275, 1612.52437pt x 611.28375pt>
+<Figures/Econmic_Analysis/Flowsheet.jpg, id=276, 1612.52437pt x 611.28375pt>
 File: Figures/Econmic_Analysis/Flowsheet.jpg Graphic file (type jpg)
 <use Figures/Econmic_Analysis/Flowsheet.jpg>
 Package pdftex.def Info: Figures/Econmic_Analysis/Flowsheet.jpg  used on input 
@@ -1507,18 +1507,31 @@ Overfull \hbox (9.70285pt too wide) in paragraph at lines 345--346
  [][] 
  []
 
-[26] [27] [28]) (Aspen_Tutorial_Plant_Design.bbl
+[26]
+<Figures/Econmic_Analysis/HX.jpg, id=358, 1080.28593pt x 529.98pt>
+File: Figures/Econmic_Analysis/HX.jpg Graphic file (type jpg)
+<use Figures/Econmic_Analysis/HX.jpg>
+Package pdftex.def Info: Figures/Econmic_Analysis/HX.jpg  used on input line 37
+9.
+(pdftex.def)             Requested size: 426.79135pt x 209.37619pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] [28 <./Figures/Econmic_Analysis/HX.jpg>] [29]) [30
+
+
+
+
+
+]
+(Aspen_Tutorial_Plant_Design.bbl
 Underfull \hbox (badness 1609) in paragraph at lines 9--13
 |   []   |   []   |   []   |   []   |   []\T1/cmr/m/n/12 .  CRC Press, 2020.  I
 SBN
  []
 
-) [29
-
-
-
-
-
+) [31
 
 ] (Aspen_Tutorial_Plant_Design.aux (TeX_files/Preface.aux)
 (TeX_files/Thermochemical.aux) (TeX_files/Esterification.aux)
@@ -1528,13 +1541,13 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Aspen_Tutorial_Plant_Design.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 5CDEE8EFE6E4CE4707B99A848BB2C6E7;2482.
+(rerunfilecheck)             Checksum: 384162F2180724E5523EE50FC363A668;2487.
  ) 
 Here is how much of TeX's memory you used:
- 36799 strings out of 478847
- 834808 string characters out of 2848486
- 1243323 words of memory out of 3000000
- 53878 multiletter control sequences out of 15000+600000
+ 36812 strings out of 478847
+ 835132 string characters out of 2848486
+ 1243438 words of memory out of 3000000
+ 53887 multiletter control sequences out of 15000+600000
  433687 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,131p,1661b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1560,9 +1573,9 @@ Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX/
 fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/cm-super/sfrm2074.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-supe
 r/sfti1200.pfb>
-Output written on Aspen_Tutorial_Plant_Design.pdf (35 pages, 3695997 bytes).
+Output written on Aspen_Tutorial_Plant_Design.pdf (37 pages, 3919819 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
